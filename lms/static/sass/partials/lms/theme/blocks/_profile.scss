@@ -2,15 +2,38 @@
     .profile {
         word-break: break-word;
 
+        .profile-top-bar-wrapper {
+            background: #e4e4e4;
+            border-bottom: 1px solid #c8c8c8;
+        }
+
         .wrapper-profile-field-account-privacy {
+            @extend %container;
+
+            background: none;
+            border-bottom: none;
             padding: 0 15px;
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &:after {
+                display: none;
+            }
 
             .u-field {
                 @extend %container;
 
                 display: block;
                 padding: 15px 0;
+                min-width: 0;
+                margin: 0;
+                width: 100%;
+
+                @include media-breakpoint-up(md) {
+                    width: auto;
+                }
             }
 
             .u-field-title,
@@ -46,11 +69,14 @@
                 @extend %container;
 
                 display: block;
+                padding: 5px 0;
+                margin: 0;
 
                 button {
                     @include simple($base-color);
 
-                    margin-bottom: 15px;
+                    margin: 0 !important;
+                    font-weight: 600 !important;
 
                     @include media-breakpoint-down(sm) {
                         margin-top: 0;
