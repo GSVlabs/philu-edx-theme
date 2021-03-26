@@ -404,11 +404,17 @@ nav.wrapper-preview-menu {
                 border: none;
                 height: 30px;
             }
+
+            .action-preview-label {
+                @include media-breakpoint-down(xs) {
+                    margin: 6px 10px 6px 0 !important;
+                }
+            }
         }
 
         .preview-actions {
             @include media-breakpoint-down(sm) {
-                margin-bottom: 12px;
+                margin: 5px 0;
             }
 
             + div .btn-primary {
