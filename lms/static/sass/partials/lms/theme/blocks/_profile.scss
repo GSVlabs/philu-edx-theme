@@ -138,3 +138,7 @@
         box-shadow: none;
     }
 }
+
+.learner-achievements .certificate-card .card-logo {
+    background: url("#{$static-path}/images/medal.svg") no-repeat 50% 50% / contain !important;
+}
