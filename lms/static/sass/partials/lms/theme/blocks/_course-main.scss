@@ -100,7 +100,7 @@
                     transform: translateY(-50%) rotate(90deg);
                 }
 
-                .rtl & {
+                @include rtl {
                     transform: translateY(-50%) rotate(180deg);
 
                     &.fa-rotate-90 {
@@ -293,9 +293,20 @@
             background: $link-hover;
         }
 
-        .rtl & .capa_inputtype.imageinput [id^="answer_"] {
-            left: auto;
-            right: 0;
+        @include rtl {
+            .capa_inputtype.imageinput [id^="answer_"] {
+                left: auto;
+                right: 0;
+            }
+        }
+
+        @include rtl {
+            .field-input {
+                &.input-radio,
+                &.input-checkbox {
+                    margin: 5px 5px 5px 10px !important;
+                }
+            }
         }
     }
 

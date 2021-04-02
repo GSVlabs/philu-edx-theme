@@ -408,6 +408,26 @@
         @include media-breakpoint-down(sm) {
             height: auto;
         }
+
+        @include rtl {
+            transform: scale(-1, 1);
+
+            .wmd-spacer {
+                left: auto;
+            }
+
+            .wmd-spacer1 {
+                right: 50px;
+            }
+
+            .wmd-spacer2 {
+                right: 175px;
+            }
+
+            .wmd-spacer3 {
+                right: 300px;
+            }
+        }
     }
 
     .wmd-button,

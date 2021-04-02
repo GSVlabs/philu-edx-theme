@@ -23,9 +23,18 @@ body.view-wiki {
                 float: right;
             }
 
+            .CodeMirror {
+                direction: rtl;
+            }
+
             .CodeMirror-scroll {
                 margin-left: -30px;
                 margin-right: 0;
+            }
+
+            #hint_id_content {
+                right: auto;
+                left: 0;
             }
         }
     }
