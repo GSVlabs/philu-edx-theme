@@ -142,4 +142,43 @@ body.view-student-notes {
             min-width: 150px;
         }
     }
+
+    .annotator-controls {
+        button {
+            &.annotator-edit,
+            &.annotator-delete,
+            &.annotator-close {
+                text-indent: -9999px;
+                font-size: 0;
+
+                &:before {
+                    top: 2px !important;
+                }
+            }
+        }
+    }
+
+    .annotator-note {
+        @include rtl {
+            text-align: right;
+        }
+    }
+
+    .annotator-editor {
+        .annotator-item {
+            input,
+            textarea {
+                @include rtl {
+                    text-align: right;
+                }
+            }
+        }
+
+        .annotator-widget:after {
+            @include rtl {
+                right: auto;
+                left: 12px;
+            }
+        }
+    }
 }

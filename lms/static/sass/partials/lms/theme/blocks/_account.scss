@@ -18,7 +18,7 @@
                 padding: 12px 30px 12px 15px;
 
                 ~ .icon-caret-down:after {
-                    .rtl & {
+                    @include rtl {
                         right: auto;
                         left: 10px;
                     }
@@ -64,7 +64,7 @@
             }
 
             .u-field-message {
-                .rtl & {
+                @include rtl {
                     padding-left: 0;
                     padding-right: 80px;
                 }

@@ -93,7 +93,7 @@
         word-break: break-word;
 
         .teacher-image {
-            .rtl & {
+            @include rtl {
                 margin: 0 0 0 15px !important;
             }
         }

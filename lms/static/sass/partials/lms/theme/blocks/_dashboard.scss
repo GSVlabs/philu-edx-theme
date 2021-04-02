@@ -246,10 +246,20 @@
                     }
 
                     li {
-                        padding-right: 5px;
+                        padding-right: 10px;
+                        margin-right: 10px;
+
+                        .certificate-icon {
+                            width: 14px;
+                            height: 20px;
+                            background: url("#{$static-path}/images/medal.svg") no-repeat !important;
+                            background-size: 14px 20px;
+                            filter: grayscale(100%);
+                        }
 
                         &:last-child {
                             padding-right: 0;
+                            margin-right: 0;
                         }
                     }
                 }
@@ -298,7 +308,7 @@
         padding: 40px 0 40px 20px;
 
         @include media-breakpoint-up(lg) {
-            .rtl & {
+            @include rtl {
                 padding: 40px 20px 40px 0;
             }
         }

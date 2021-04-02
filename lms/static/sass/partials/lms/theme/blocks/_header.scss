@@ -335,6 +335,11 @@ header.global-header {
                 height: 43px;
                 right: 0;
 
+                @include rtl {
+                    left: 0;
+                    right: auto;
+                }
+
                 &:hover,
                 &:focus {
                     background: transparent;
