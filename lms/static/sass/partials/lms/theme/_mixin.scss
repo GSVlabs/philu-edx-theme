@@ -28,6 +28,30 @@
     @return $-local-lightness > .6;
 }
 
+// Flat Button
+
+@mixin flat($mixin-color) {
+    $initial-color: $mixin-color;
+    $color: hsl(0, 0, 100%);
+
+    @if is-light($mixin-color) {
+        $color: hsl(0, 0, 20%);
+    }
+
+    color: $color;
+    border-color: $base-color;
+    background: $base-color;
+    border-radius: 3px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: $link-hover;
+        border-color: $link-hover;
+        color: $color;
+    }
+}
+
 // Simple Button
 
 @mixin simple($mixin-color, $grayscale: false, $textsize: inherit, $padding: 7px 18px) {

@@ -24,7 +24,7 @@
     }
 }
 
-.program-details-wrapper {
+.program-details .program-details-wrapper {
     .course-list-heading {
         color: $base-color;
     }
@@ -41,14 +41,10 @@
         }
     }
 
+    .enroll-button button,
+    .enroll-button .enroll-course-button,
     .course-enroll-view .view-course-button {
-        background: $base-color;
-        border-color: $base-color;
-
-        &:hover {
-            background: $link-hover;
-            border-color: $link-hover;
-        }
+        @include flat($base-color);
     }
 }
 
