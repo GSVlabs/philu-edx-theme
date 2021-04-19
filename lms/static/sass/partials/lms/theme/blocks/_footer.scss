@@ -97,36 +97,46 @@ footer.wrapper-footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+        left: -13px;
+        font-style: italic;
 
         @include media-breakpoint-up(lg) {
             width: auto;
             position: absolute;
-            left: 20px;
             top: 0;
             transform: translateY(calc(-50% + 20px));
         }
 
-        @include media-breakpoint-up(xl) {
-            left: 0;
-        }
+        .open-edx-link {
+            display: block;
+            position: relative;
+            top: -1px;
+            margin-right: 3px;
 
-        svg {
-            fill: $footer-support-text-and-logo;
-
-            &:hover {
-                opacity: .8;
+            img {
+                display: block;
+                width: 100px;
             }
         }
 
-        .svg-edx {
-            width: 58px;
-            height: 36px;
-        }
+        .rg-link {
+            margin-left: 7px;
 
-        .svg-raccoon {
-            width: 20px;
-            height: 20px;
-            margin-left: 5px;
+            svg {
+                width: 23px;
+                height: 23px;
+                position: relative;
+                top: -1px;
+
+                &.svg-raccoon-white {
+                    fill: $footer-support-text-and-logo;
+                }
+
+                &:hover {
+                    opacity: .8;
+                }
+            }
         }
     }
 
