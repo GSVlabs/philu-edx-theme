@@ -45,13 +45,16 @@
         >
       </a>
       <p class="footer-support">
-        Built on
-        <a target="_blank" href="https://open.edx.org/">
-          <svg class="svg-edx"  viewBox="0 0 100 70"><use xlink:href="#logo-edx" /></svg>
+        <a class="open-edx-link" target="_blank" href="https://open.edx.org/">
+          <img alt="Powered by Open edX" ${'src=https://files.edx.org/openedx-logos/open-edx-logo-tag-dark.png' if theme_config.html_data()['footer_dark'] else 'src=https://files.edx.org/openedx-logos/open-edx-logo-tag.png'}>
         </a>
         by RACCOONGANG
-        <a target="_blank" href="https://raccoongang.com/">
-          <svg class="svg-raccoon"  viewBox="0 0 100 100"><use xlink:href="#logo-raccoon" /></svg>
+        <a class="rg-link" target="_blank" href="https://raccoongang.com/">
+          % if theme_config.html_data()['footer_dark']:
+          <svg class="svg-raccoon-white"  viewBox="0 0 100 100"><use xlink:href="#logo-raccoon" /></svg>
+          % else:
+          <svg class="svg-raccoon-colored"  viewBox="0 0 65 53"><use xlink:href="#logo-raccoon-colored" /></svg>
+          % endif
         </a>
       </p>
     </div>
