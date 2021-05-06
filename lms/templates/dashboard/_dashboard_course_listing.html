@@ -97,10 +97,6 @@ from lms.djangoapps.experiments.utils import UPSELL_TRACKING_FLAG
     </div>
       <div class="wrapper-course-details">
         <div class="wrapper-course-details-info">
-          <div class="course-top-info">
-            <span class="info-university">${course_overview.display_org_with_default} - </span>
-            <span class="info-course-id">${course_overview.display_number_with_default}</span>
-          </div>
           <h3 class="course-title" id="course-title-${enrollment.course_id}">
             % if show_courseware_link and not is_unfulfilled_entitlement:
               % if not is_course_expired:
