@@ -390,3 +390,11 @@
         }
     }
 }
+
+body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:hover {
+    color: $base-color;
+
+    .fa {
+        color: $base-color !important;
+    }
+}
