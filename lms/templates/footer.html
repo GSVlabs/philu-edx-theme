@@ -16,14 +16,13 @@
   <div class="holder">
     <nav>
       <ul class="footer-nav-list">
-        % for link in theme_config.html_data()['footerLinks']:
-            <li class="footer-nav-item">
-              <a href="${theme_config.html_data()['footerLinks'][link]['url']}" class="footer-nav-link"
-                 ${"target=_blank" if theme_config.html_data()['footerLinks'][link]['target_blank'] else ''} >
-                ${theme_config.html_data()['footerLinks'][link]['text']}
-              </a>
-            </li>
-          % endfor
+        % for link in sorted(theme_config.html_data()['footerLinks'].values(), key=lambda k: k['order']):
+          <li class="footer-nav-item">
+            <a href="${link['url']}" class="footer-nav-link" ${"target=_blank" if link['target_blank'] else ""}>
+              ${link['text']}
+            </a>
+          </li>
+        % endfor
       </ul>
     </nav>
     <div class="footer-holder">
