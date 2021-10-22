@@ -398,3 +398,85 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:hover {
         color: $base-color !important;
     }
 }
+
+.xblock .openassessment {
+    .is--in-progress.openassessment__steps__step {
+        border-top-color: $base-color;
+    }
+
+    .openassessment__steps__step.is--in-progress .step__status__value {
+        background: $base-color;
+    }
+
+    .submission__answer__part__prompt__copy a,
+    .message .message__content a {
+        color: $link-color;
+
+        &:hover,
+        &:focus {
+            color: $link-hover;
+            border-color: $link-hover;
+        }
+    }
+
+    .ui-slidable__container .ui-slidable:not([disabled]) {
+        color: $base-color;
+
+        &:hover,
+        &:focus {
+            color: $blue2;
+        }
+    }
+
+    .list--actions .action--submit,
+    .openassessment_student_info_form .action--submit-username {
+        background: $base-color;
+        border-color: $base-color;
+
+        &:hover,
+        &:focus {
+            background: $blue2;
+            border-color: $blue2;
+        }
+    }
+
+    .action--submit,
+    .step--self-assessment .self-assessment__assessment .action--save,
+    .step--peer-assessment .peer-assessment__assessment .action--save,
+    .step--response .delete__uploaded__file,
+    .step--response .action--upload,
+    .step--response .response__submission__actions .action--save,
+    .step--response .response__submission__content .action--save {
+        border: 1px solid $base-color;
+        color: $base-color;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $blue2;
+            border-color: $blue2;
+        }
+    }
+
+    .wrapper--staff-area .wrapper--staff-toolbar .ui-staff__button:not(.is--active):hover {
+        background: $blue2;
+    }
+
+    .step--response .action--upload {
+        @include media-breakpoint-down(sm) {
+            float: none;
+            margin-top: 0;
+        }
+    }
+
+    .step--self-assessment .self-assessment__assessment,
+    .step--peer-assessment .peer-assessment__assessment,
+    .step--response .response__submission__actions,
+    .step--response .response__submission__content {
+        .action--save {
+            @include media-breakpoint-down(xs) {
+                min-width: 195px;
+            }
+        }
+    }
+}
