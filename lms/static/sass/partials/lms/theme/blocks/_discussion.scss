@@ -122,6 +122,12 @@
     }
 
     .new-post-btn {
+        color: $base-color;
+
+        &:hover {
+            color: $white;
+        }
+
         @include media-breakpoint-down(xs) {
             display: block;
             width: 100%;
@@ -141,11 +147,17 @@
 
             &:hover {
                 color: $white;
-                background: $m-blue-l1 !important;
-                border-color: $m-blue-l1;
+                background: $base-color !important;
+                border-color: $base-color;
                 text-decoration: none !important;
             }
         }
+    }
+
+    .add-response-btn,
+    .discussion-submit-post,
+    .discussion-submit-comment {
+        text-shadow: none !important;
     }
 
     .forum-nav-filter-main,
@@ -332,6 +344,11 @@
     .discussion-show {
         transition: all .2s ease;
 
+        &:hover {
+            background: $base-color !important;
+            border-color: $base-color !important;
+        }
+
         @media screen and (max-width: 760px) {
             margin-bottom: 10px;
         }
@@ -351,6 +368,15 @@
     .discussion-comment {
         word-break: break-word;
         padding-right: 30px;
+    }
+}
+
+.forum-new-post-form {
+    .btn.submit,
+    .btn.cancel {
+        &:hover {
+            text-shadow: none !important;
+        }
     }
 }
 
