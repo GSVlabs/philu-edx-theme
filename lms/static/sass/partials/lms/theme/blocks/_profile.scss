@@ -134,11 +134,17 @@
         }
     }
 
-    .wrapper-profile-section-one .profile-image-field .image-wrapper .u-field-remove-button:hover {
-        border: none;
-        text-shadow: none;
-        color: $base-color;
-        box-shadow: none;
+    .wrapper-profile-section-one {
+        .profile-image-field .image-wrapper .u-field-remove-button:hover {
+            border: none;
+            text-shadow: none;
+            color: $base-color;
+            box-shadow: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: none;
+        }
     }
 }
 
