@@ -1,7 +1,8 @@
-## Checklist for base theme:
+## Checklist for a LMS basic theme:
 
 **general**
 - [ ] favicon
+- [ ] color scheme
 
 **header block**
 - [ ] header logo
@@ -24,3 +25,12 @@
 
 **microsite**
 - [ ] add microsite variables [only for microsite]
+
+## Checklist for a CMS basic theme:
+
+**general**
+- [ ] favicon
+- [ ] color scheme
+
+**header block**
+- [ ] header logo
