@@ -23,7 +23,7 @@ from six import text_type
 
         ## Translators: This text will be automatically posted to the student's
         ## Twitter account. {url} should appear at the end of the text.
-        tweet_text = _("I just enrolled in {number} {title} through {account}: {url}").format(
+        tweet_text = _("I just enrolled in {number} {title} through {account}: {url}.").format(
             number=course.number,
             title=course.display_name_with_default,
             account=static.get_value('course_about_twitter_account', settings.PLATFORM_TWITTER_ACCOUNT),
@@ -32,10 +32,10 @@ from six import text_type
                 domain=site_domain,
                 path=reverse('about_course', args=[text_type(course.id)])
             )
-        ).replace(u" ", u"+")
-        tweet_action = u"http://twitter.com/intent/tweet?text={tweet_text}".format(tweet_text=six.moves.urllib.parse.quote_plus(tweet_text.encode('UTF-8')))
+        )
+        tweet_action = u"http://twitter.com/intent/tweet?text={tweet_text}".format(tweet_text=six.moves.urllib.parse.quote(tweet_text.encode('UTF-8')))
 
-        facebook_text = _("I just enrolled in {number} {title}: {url}").format(
+        facebook_text = _("I just enrolled in {number} {title}: {url}.").format(
             number=course.number,
             title=course.display_name_with_default,
             #account=static.get_value('course_about_facebook_link', settings.PLATFORM_FACEBOOK_ACCOUNT),
@@ -44,14 +44,16 @@ from six import text_type
                 domain=site_domain,
                 path=reverse('about_course', args=[text_type(course.id)]),
             )
-        ).replace(u" ", u"%20")
+        )
         course_url=u"{protocol}://{domain}{path}".format(
             protocol=site_protocol,
             domain=site_domain,
             path=reverse('about_course', args=[text_type(course.id)]),
         )
-        facebook_action = u"https://www.facebook.com/sharer/sharer.php?u={course_url}&quote={facebook_text}".format(course_url=course_url, facebook_text=facebook_text)
-
+        facebook_action = u"https://www.facebook.com/sharer/sharer.php?u={course_url}&quote={facebook_text}".format(
+          course_url=six.moves.urllib.parse.quote(course_url.encode('UTF-8')),
+          facebook_text=six.moves.urllib.parse.quote(facebook_text.encode('UTF-8'))
+        )
         email_body = _("I just enrolled in {number} {title} through {platform} {url}").format(
                 number=course.number,
                 title=course.display_name_with_default,
