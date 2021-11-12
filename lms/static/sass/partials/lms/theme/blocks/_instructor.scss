@@ -311,11 +311,18 @@
         }
 
         section.idash-section#cohort_management {
-            .wrapper-tabs .tab.is-selected .toggle-button {
-                margin: 10px 10px 0 0;
+            .wrapper-tabs .tab {
+                &.is-selected .toggle-button {
+                    margin: 10px 10px 0 0;
 
-                &:hover {
+                    &:hover {
+                        text-shadow: none;
+                    }
+                }
+
+                .toggle-button:hover {
                     text-shadow: none;
+                    color: #474747;
                 }
             }
 
@@ -484,6 +491,10 @@
                     padding: 15px;
                 }
             }
+        }
+
+        .slickgrid .slick-cell {
+            height: 36px;
         }
     }
 
@@ -689,6 +700,17 @@
             background-image: none;
             padding-left: 15px;
         }
+    }
+}
+
+.open-response-assessment-main-table table th button {
+    &:hover {
+        text-shadow: none;
+        color: darken($base-color, 20%);
+    }
+
+    .sort-caret {
+        vertical-align: middle !important;
     }
 }
 
