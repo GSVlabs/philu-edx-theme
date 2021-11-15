@@ -456,6 +456,12 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:hover {
         &:active {
             background: $blue2;
             border-color: $blue2;
+            color: $white;
+        }
+
+        &:disabled {
+            border-color: #b4b3b3;
+            color: #b4b3b3;
         }
     }
 
@@ -479,5 +485,9 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:hover {
                 min-width: 195px;
             }
         }
+    }
+
+    div.submission__answer__part__text__value:empty {
+        display: none;
     }
 }
