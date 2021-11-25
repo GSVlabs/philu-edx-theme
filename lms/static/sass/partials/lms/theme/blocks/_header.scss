@@ -25,6 +25,7 @@ header.global-header {
 
         a {
             margin: 0;
+            border-bottom: none;
 
             &:hover {
                 opacity: .8;
@@ -74,7 +75,7 @@ header.global-header {
                     text-transform: uppercase;
                     font-size: 14px;
                     font-weight: 600;
-                    border: none;
+                    border-bottom: none;
 
                     &:hover {
                         color: $header-nav-link-color-hover;
@@ -126,6 +127,10 @@ header.global-header {
                     font-weight: 700;
                     padding: 9px 10px;
                     display: inline-block;
+
+                    &:not(.btn) {
+                        border-bottom: none;
+                    }
 
                     &.sign-in-btn,
                     &.shopping-cart {

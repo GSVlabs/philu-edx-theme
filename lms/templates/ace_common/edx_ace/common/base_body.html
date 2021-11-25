@@ -45,7 +45,7 @@
     <![endif]-->
 
     <!-- CONTENT -->
-    <table class="content" role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#f5f5f5" width="100%" style="
+    <table class="content" role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#fbfaf9" width="100%" style="
         font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 1em;
         line-height: 1.5;
@@ -67,7 +67,7 @@
                             </a>
                         </td>
                         <td align="right" style="text-align: {{ LANGUAGE_BIDI|yesno:"left,right" }};">
-                            <a class="login" href="{% with_link_tracking dashboard_url %}" style="color: #ac72ac;">{%  trans "Sign In" %}</a>
+                            <a class="login" href="{% with_link_tracking dashboard_url %}" style="color: #ac2213;">{%  trans "Sign In" %}</a>
                         </td>
                     </tr>
                 </table>
@@ -162,8 +162,8 @@
                         <td style="padding-bottom: 20px;">
                             {% for action_link_url, action_link_text in channel.action_links %}
                                 <p>
-                                    <a href="{{ action_link_url }}" style="color: #ac72ac">
-                                        <font color="#ac72ac"><b>{{ action_link_text }}</b></font>
+                                    <a href="{{ action_link_url }}" style="color: #ac2213">
+                                        <font color="#ac2213"><b>{{ action_link_text }}</b></font>
                                     </a>
                                 </p>
                             {% endfor %}
@@ -175,7 +175,7 @@
                             &copy; {% now "Y" %} {{ platform_name }}, {% trans "All rights reserved" as tmsg %}{{ tmsg | force_escape }}.<br/>
                             <br/>
                             {% trans "Our mailing address is" as tmsg %}{{ tmsg | force_escape }}:<br/>
-                            <a style="color: #ac72ac" href="mailto:{{ contact_mailing_address }}">{{ contact_mailing_address }}</a>
+                            <a style="color: #ac2213" href="mailto:{{ contact_mailing_address }}">{{ contact_mailing_address }}</a>
                         </td>
                     </tr>
                     {% if unsubscribe_url %}

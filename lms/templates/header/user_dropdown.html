@@ -56,7 +56,7 @@ show_gamification = settings.FEATURES.get('RG_GAMIFICATION', {}).get('ENABLED')
         <div class="mobile-nav-item dropdown-item dropdown-nav-item">
             <a href="${reverse('account_settings')}" role="menuitem">${_("Account")}</a>
         </div>
-        % if should_redirect_to_order_history_microfrontend():
+        % if should_show_order_history:
             <div class="mobile-nav-item dropdown-item dropdown-nav-item">
                 <a href="${settings.ORDER_HISTORY_MICROFRONTEND_URL}" role="menuitem">${_("Order History")}</a>
             </div>

@@ -55,18 +55,39 @@
                         }
                     }
 
-                    .wrapper-course-actions {
+                    .wrapper-course-info-row .wrapper-course-actions {
                         margin: 0;
+                        display: flex;
+                        flex-wrap: wrap;
                         align-self: center;
+                        justify-content: flex-end;
+                        max-width: 100%;
 
                         @include media-breakpoint-up(md) {
                             min-width: 200px;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            width: 100%;
+                            justify-content: center;
                         }
 
                         .wrapper-action-more,
                         .entitlement-actions-wrapper {
                             @include media-breakpoint-down(sm) {
                                 padding-top: 0;
+                            }
+                        }
+                    }
+
+                    .continue-button {
+                        flex-grow: 0;
+                        flex-shrink: 1;
+                        margin-left: 10px;
+
+                        .enter-course {
+                            @include media-breakpoint-down(xs) {
+                                margin-top: 0;
                             }
                         }
                     }
@@ -90,7 +111,7 @@
                                 text-shadow: none;
                                 padding: 5px;
                                 border-color: $base-color2;
-                                margin: 3px 10px 3px 0;
+                                margin: 3px 0;
                                 transition: all .25s ease-in-out;
 
                                 @include rtl {
@@ -138,6 +159,7 @@
                     }
 
                     .wrapper-course-details-info {
+                        width: 100%;
                         margin: 5px 0;
                         display: flex;
                         flex-direction: column;

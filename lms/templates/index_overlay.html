@@ -7,10 +7,10 @@ from openedx.core.djangolib.markup import HTML, Text
 %>
 
 % if theme_config.html_data()['banner']['title']:
-<h1>${theme_config.html_data()['banner']['title']}</h1>
+  <h1>${theme_config.html_data()['banner']['title']}</h1>
 %endif
 
 % if theme_config.html_data()['banner']['description']:
-<p>${theme_config.html_data()['banner']['description']}</p>
+  <p>${theme_config.html_data()['banner']['description']}</p>
 %endif
 

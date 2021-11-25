@@ -1,6 +1,10 @@
 .program-list-wrapper {
     max-width: 100%;
     padding: 20px 0;
+
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+    }
 }
 
 .program-details {
@@ -17,11 +21,31 @@
     }
 }
 
-.sidebar .aside.program-advertise {
-    padding: 20px 10px;
+.sidebar {
+    @include media-breakpoint-up(sm) {
+        flex: 0 0 323px;
+        max-width: 323px;
+        padding: 0;
+        margin-left: 30px;
+    }
 
-    .ad-link .new-programs-btn {
-        @include simple($base-color);
+    @include media-breakpoint-down(md) {
+        flex: none;
+        margin: 10px 15px 0 auto;
+    }
+
+    @include media-breakpoint-down(sm) {
+        max-width: 100%;
+        margin: 10px 0 0;
+        padding: 0;
+    }
+
+    .aside.program-advertise {
+        padding: 20px 10px;
+
+        .ad-link .new-programs-btn {
+            @include simple($base-color);
+        }
     }
 }
 
@@ -61,5 +85,84 @@
         &:hover {
             background-color: $link-hover;
         }
+    }
+}
+
+.program-cards-container {
+    align-items: normal;
+
+    @include media-breakpoint-up(sm) {
+        flex: 1 0 0;
+        max-width: 100%;
+        margin: 0 -15px;
+        padding: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+        flex-basis: auto;
+        margin: 0;
+        justify-content: center;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 0;
+    }
+}
+
+.program-card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: calc(100% / 2 - #{$program-card-offset-double});
+    margin: 0 $program-card-offset $program-card-offset-double;
+
+    &:nth-child(2n+1) {
+        @include media-breakpoint-up(md) {
+            margin-left: $program-card-offset;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        max-width: 323px;
+        margin: 0 7px $program-card-offset-double;
+    }
+
+    @include media-breakpoint-down(xs) {
+        margin: 0 auto $program-card-offset-double;
+    }
+
+    .status-text {
+        margin-top: auto;
+
+        .number-circle {
+            padding-top: 0;
+            line-height: 22px;
+            margin-bottom: 1px;
+        }
+    }
+}
+
+.program-progress {
+    @include media-breakpoint-down(xs) {
+        width: 100%;
+    }
+}
+
+.progress-circle-wrapper {
+    @include media-breakpoint-down(xs) {
+        width: 270px;
+        margin: -20px auto 0;
+    }
+}
+
+#program-details-hero .main-banner .logo-space {
+    height: 0;
+}
+
+#program-details-page .program-info .facts {
+    @include media-breakpoint-down(xs) {
+        margin: 0 -15px;
     }
 }
