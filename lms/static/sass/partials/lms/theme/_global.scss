@@ -101,3 +101,8 @@ body[class] {
     max-height: calc(100% - 20px);
     overflow: auto;
 }
+
+.sr,
+.sr-only {
+    margin: -1px;
+}

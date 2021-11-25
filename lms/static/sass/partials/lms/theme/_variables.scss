@@ -55,6 +55,10 @@ $font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-
 $font-family-serif: $font-family-sans-serif;
 $georgia: $font-family-sans-serif;
 
+// offsets
+$program-card-offset: 15px;
+$program-card-offset-double: 30px;
+
 @import "mixin";
 @import "custom/variables";
 @import "edx-bootstrap/sass/open-edx/theme";
