@@ -3,7 +3,7 @@ stages:
 
 stylelint:
     stage: linting
-    image: pipelinecomponents/stylelint:latest
+    image: pipelinecomponents/stylelint:0.9.0
     before_script:
         - apk add git
         - git clone https://github.com/raccoongang/frontend.git
