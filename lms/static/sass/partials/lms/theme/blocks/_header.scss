@@ -284,9 +284,14 @@ header.global-header {
     justify-content: center;
     text-align: center;
     position: relative;
-    min-height: 420px;
+    min-height: 425px;
     margin: -20px -20px 0 -20px;
     width: auto;
+
+    @media (min-width: 1920px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     @include media-breakpoint-down(sm) {
         margin: -20px 0 0;
@@ -384,12 +389,21 @@ header.global-header {
 
 .parallax-img {
     position: absolute;
-    left: 0;
+    left: 20px;
     top: -100px;
     width: 100%;
-    height: calc(100% + 200px);
+    max-width: 1920px;
+    height: calc(100% + 195px);
     background: #040404 url("#{$static-path}/images/background.jpg") no-repeat 50% 50%;
     background-size: cover;
+
+    @media (min-width: 1920px) {
+        left: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+        left: 0;
+    }
 }
 
 nav.wrapper-preview-menu {
