@@ -71,6 +71,10 @@
     .course-enroll-view .view-course-button {
         @include flat($base-color);
     }
+
+    .course-list > div:nth-of-type(even) {
+        background: none;
+    }
 }
 
 .program-sidebar {
