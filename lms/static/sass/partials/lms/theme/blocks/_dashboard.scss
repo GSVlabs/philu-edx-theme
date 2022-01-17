@@ -101,6 +101,12 @@
                         }
 
                         .wrapper-action-more {
+                            margin-right: 10px;
+
+                            &:only-child {
+                                margin: 0;
+                            }
+
                             @include media-breakpoint-down(sm) {
                                 order: -1;
                             }
