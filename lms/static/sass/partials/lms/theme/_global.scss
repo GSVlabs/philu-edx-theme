@@ -46,6 +46,10 @@ body[class] {
         }
     }
 
+    .view-in-course & {
+        background: $white;
+    }
+
     .home &,
     .view-profile & {
         max-width: 1920px;
