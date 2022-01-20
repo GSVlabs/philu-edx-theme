@@ -46,10 +46,6 @@ body[class] {
         }
     }
 
-    .view-in-course & {
-        background: $white;
-    }
-
     .home &,
     .view-profile & {
         max-width: 1920px;
@@ -109,4 +105,8 @@ body[class] {
 .sr,
 .sr-only {
     margin: -1px;
+}
+
+body.view-in-mfe #content {
+    background: $white;
 }
