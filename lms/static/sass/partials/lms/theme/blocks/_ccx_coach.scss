@@ -1,0 +1,34 @@
+#ccx-coach-dashboard-content {
+    form.ccx-form input {
+        margin-bottom: 5px;
+    }
+
+    .instructor-nav .nav-item .btn-link {
+        &:hover,
+        &:focus {
+            text-decoration: none !important;
+        }
+    }
+
+    button.ccx-button-link {
+        color: $link-color;
+
+        &:hover,
+        &:focus {
+            color: $link-hover;
+            box-shadow: none;
+            text-shadow: none;
+            border: none;
+        }
+    }
+
+    section.idash-section#membership .member-lists-management-ccx .auth-list-container .revoke {
+        &:hover {
+            color: $white;
+        }
+
+        span {
+            margin-right: 5px;
+        }
+    }
+}
