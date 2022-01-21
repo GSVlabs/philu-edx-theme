@@ -178,11 +178,17 @@
 
                         .course-info {
                             padding-left: 0;
+                            font-size: 14px;
+                            line-height: 20px;
+
+                            [class*="info-"] {
+                                font: inherit !important;
+                            }
                         }
                     }
 
                     .info-date-block-container span {
-                        font-size: 14px;
+                        font: inherit !important;
                         color: #474747;
                     }
                 }
