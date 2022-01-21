@@ -15,6 +15,10 @@ select:not(.forum-nav-filter-main-control):not(.forum-nav-sort-control):not(.for
     padding: 0 30px 0 10px !important;
     max-width: 100%;
 
+    &[multiple] {
+        background: $white !important;
+    }
+
     &:focus {
         box-shadow: 0 0 6px 0 darken($button-archive-color, 50%), inset 0 0 4px 0 rgba($black, .15);
     }
