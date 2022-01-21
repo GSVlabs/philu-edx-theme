@@ -292,6 +292,23 @@
                 color: $base-color;
             }
 
+            .open-response-assessment-main-table {
+                th,
+                td {
+                    line-height: 20px;
+                    padding: 4px 5px;
+                }
+
+                th button {
+                    padding: 0;
+                }
+
+                td {
+                    border-top: 1px solid $table-border-color;
+                    border-bottom: 1px solid $table-border-color;
+                }
+            }
+
             .backgrid {
                 .total,
                 .name,
