@@ -2,6 +2,7 @@
 
 **general**
 - [ ] favicon
+- [ ] favicon for MFE
 - [ ] color scheme
 
 **header block**
