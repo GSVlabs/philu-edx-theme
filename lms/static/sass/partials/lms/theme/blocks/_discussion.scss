@@ -367,6 +367,10 @@
     .response-header-content {
         width: 100%;
         padding-right: 30px;
+
+        .username {
+            color: $link-hover;
+        }
     }
 
     .discussion-comment {
