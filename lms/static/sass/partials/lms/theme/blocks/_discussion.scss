@@ -482,13 +482,22 @@
     }
 }
 
-.xblock .discussion-module .forum-nav-refine-bar {
-    .forum-nav-filter-main,
-    .forum-nav-filter-cohort,
-    .forum-nav-sort {
-        @media (min-width: 768px) {
-            width: 32%;
+.discussion-body,
+.xblock {
+    .discussion-module .forum-nav-refine-bar {
+        .forum-nav-filter-main,
+        .forum-nav-filter-cohort,
+        .forum-nav-sort {
+            @media (min-width: 768px) {
+                width: 32%;
+            }
         }
+    }
+
+    .wmd-button:hover {
+        background: rgba($base-color, .5) !important;
+        box-shadow: none !important;
+        border: none !important;
     }
 }
 
