@@ -7,20 +7,6 @@
     }
 }
 
-.program-details {
-    .course-list-headings {
-        overflow: hidden;
-    }
-
-    .program-details-wrapper .course-list-headings .motivating-section,
-    aside.program-sidebar .motivating-section {
-        @include media-breakpoint-down(sm) {
-            max-width: 100%;
-            margin-left: 0;
-        }
-    }
-}
-
 .sidebar {
     @include media-breakpoint-up(sm) {
         flex: 0 0 323px;
@@ -49,31 +35,59 @@
     }
 }
 
-.program-details .program-details-wrapper {
-    .course-list-heading {
-        color: $base-color;
+.program-details {
+    .course-list-headings:before {
+        content: "";
+        display: table;
+        clear: both;
     }
 
-    .program-details-header .authoring-organizations .heading {
-        color: $base-color;
-    }
-
-    .program-course-card .course-details .course-title .course-title-link {
-        color: $base-color;
-
-        &:visited {
-            color: $base-color;
+    .program-details-wrapper .course-list-headings .motivating-section,
+    aside.program-sidebar .motivating-section {
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+            margin-left: 0;
         }
     }
 
-    .enroll-button button,
-    .enroll-button .enroll-course-button,
-    .course-enroll-view .view-course-button {
-        @include flat($base-color);
-    }
+    .program-details-wrapper {
+        .course-list-heading {
+            color: $base-color;
+        }
 
-    .course-list > div:nth-of-type(even) {
-        background: none;
+        .program-details-header .authoring-organizations .heading {
+            color: $base-color;
+        }
+
+        .program-course-card {
+            .course-details .course-title .course-title-link {
+                color: $base-color;
+
+                &:visited {
+                    color: $base-color;
+                }
+            }
+
+            .course-meta-container .course-content {
+                overflow: visible;
+
+                &:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+            }
+        }
+
+        .enroll-button button,
+        .enroll-button .enroll-course-button,
+        .course-enroll-view .view-course-button {
+            @include flat($base-color);
+        }
+
+        .course-list > div:nth-of-type(even) {
+            background: none;
+        }
     }
 }
 
