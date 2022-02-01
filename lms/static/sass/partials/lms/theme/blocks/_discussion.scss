@@ -369,7 +369,11 @@
         padding-right: 30px;
 
         .username {
-            color: $link-hover;
+            color: $link-color;
+
+            &:hover {
+                color: $link-hover;
+            }
         }
     }
 
