@@ -55,6 +55,12 @@ body[class] {
     .home & {
         padding-bottom: 40px;
     }
+
+    > section[class="container"] {
+        @include media-breakpoint-up(md) {
+            max-width: 1920px;
+        }
+    }
 }
 
 .window-wrap {
