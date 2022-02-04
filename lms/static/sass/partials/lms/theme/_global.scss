@@ -107,10 +107,14 @@ body[class] {
     margin: -1px;
 }
 
-body.view-in-mfe #content {
-    background: $white;
-}
+body {
+    &.view-in-mfe #content {
+        background: $white;
+    }
 
-body.small {
-    background: transparent;
+    &.small,
+    &.inline-link {
+        background: transparent;
+        height: initial;
+    }
 }
