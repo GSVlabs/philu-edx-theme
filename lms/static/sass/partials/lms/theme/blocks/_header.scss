@@ -94,11 +94,6 @@ header.global-header {
             margin: 0;
             align-items: center;
 
-            @include media-breakpoint-down(md) {
-                justify-content: center;
-                margin-top: 10px;
-            }
-
             > *:not(#language-settings-form) {
                 @include media-breakpoint-down(md) {
                     display: none;
