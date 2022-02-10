@@ -1,65 +1,58 @@
-.cookie-banner {
-    position: relative;
-    z-index: 3;
+.cc-grower {
     background: #f2f2f2;
     box-shadow: inset 0 0 6px rgba($black, .1);
-    box-sizing: border-box;
-    line-height: 1.5;
-    font-size: 16px;
+}
+
+#cookiepopup {
+    position: relative;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 17px 15px 20px;
+    background: transparent;
     color: #474747;
+    bottom: 0;
+    font-family: $font-family-sans-serif;
 
     @include media-breakpoint-down(sm) {
         font-size: 14px;
     }
 
-    a {
+    #dismiss {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 0;
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        text-decoration: none;
+        font: 400 25px/12px $font-family-sans-serif;
+        box-shadow: none;
+        min-width: auto;
+        border: none;
+        opacity: .5;
         color: $base-color;
-        text-decoration: underline !important;
+        transition: all .2s ease;
 
-        &:hover {
-            text-decoration: none !important;
+        &:hover,
+        &:focus {
+            opacity: 1;
         }
     }
-}
 
-.cookie-banner-container {
-    position: relative;
-    padding: 17px 15px 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1230px;
-}
-
-.cookie-banner__close {
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    font-size: 25px;
-    text-shadow: none;
-    box-shadow: none;
-    background: none !important;
-    border: 0;
-    opacity: .5;
-    color: $base-color;
-    box-sizing: border-box;
-    transition: all .2s ease;
-
-    &:hover,
-    &:focus {
-        opacity: 1;
+    .cc-compliance {
+        min-width: 40px;
     }
 
-    &:before {
-        content: "×";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
+    .cc-message {
+        margin-bottom: 0;
+
+        a {
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 }
