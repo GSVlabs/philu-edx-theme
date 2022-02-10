@@ -1,5 +1,9 @@
 .content-wrapper .course-tabs {
     overflow: auto !important;
+
+    .tab a {
+        position: relative;
+    }
 }
 
 #course-container {
