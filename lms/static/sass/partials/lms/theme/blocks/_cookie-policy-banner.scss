@@ -30,6 +30,7 @@
         box-shadow: none;
         min-width: auto;
         border: none;
+        outline: none;
         opacity: .5;
         color: $base-color;
         transition: all .2s ease;
@@ -54,5 +55,9 @@
                 text-decoration: none;
             }
         }
+    }
+
+    .cc-link {
+        display: none;
     }
 }
