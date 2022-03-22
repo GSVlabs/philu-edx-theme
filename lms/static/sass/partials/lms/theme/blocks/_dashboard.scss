@@ -83,11 +83,13 @@
                     .continue-button {
                         flex-grow: 0;
                         flex-shrink: 1;
-                        margin-left: 10px;
+                        margin: 0;
 
                         .enter-course {
                             @include media-breakpoint-down(xs) {
-                                margin-top: 0;
+                                width: auto;
+                                float: none;
+                                margin-top: 3px;
                             }
                         }
                     }
@@ -101,8 +103,6 @@
                         }
 
                         .wrapper-action-more {
-                            margin-right: 10px;
-
                             &:only-child {
                                 margin: 0;
                             }
@@ -117,7 +117,7 @@
                                 text-shadow: none;
                                 padding: 5px;
                                 border-color: $base-color2;
-                                margin: 3px 0;
+                                margin: 3px 5px;
                                 transition: all .25s ease-in-out;
 
                                 @include rtl {
@@ -200,7 +200,7 @@
                     font: 700 12px/16px $font-family-sans-serif !important;
                     padding: 7px 20px;
                     line-height: 16px;
-                    margin: 3px 0;
+                    margin: 3px 5px;
                     transition: all .25s ease-in-out;
                     color: $base-color2;
                     border-color: $base-color2;
@@ -226,7 +226,7 @@
                 .action {
                     &.action-facebook,
                     &.action-twitter {
-                        margin: 3px 10px 3px 0;
+                        margin: 3px 5px;
                         padding: 7px 0;
                         color: #767676;
                         font-size: 18px !important;
