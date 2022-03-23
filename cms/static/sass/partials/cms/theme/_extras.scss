@@ -107,3 +107,10 @@
         border-color: $base-color;
     }
 }
+
+.ui-autocomplete li.ui-menu-item a.ui-state-focus {
+    color: $black;
+    font-weight: 400;
+    background-color: transparent;
+    cursor: pointer;
+}
