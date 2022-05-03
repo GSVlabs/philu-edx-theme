@@ -271,6 +271,11 @@
                 margin: 0;
                 width: 100%;
             }
+
+            a,
+            .subtitles-menu li {
+                color: $base-color;
+            }
         }
     }
 
