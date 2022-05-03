@@ -4,6 +4,7 @@
 {% load i18n %}
 {% load static %}
 {% block content %}
+{% with lms_url='<a href="'|add:lms_url|add:'" style="color: #ac2213;">'|safe|add:lms_url|add:'</a>'|safe %}
 <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
 {% if route_enabled %}
     <tr>
@@ -50,7 +51,7 @@
                 {% blocktrans trimmed asvar assist_msg %}
                 If you need help, please use our web form at {start_anchor_web}{{ support_url }}{end_anchor} or email {start_anchor_email}{{ support_email }}{end_anchor}.
                 {% endblocktrans %}
-                {% interpolate_html assist_msg start_anchor_web='<a href="'|add:support_url|add:'">'|safe start_anchor_email='<a style="color: #ac2213;" href="mailto:'|add:support_email|add:'">'|safe end_anchor='</a>'|safe %}
+                {% interpolate_html assist_msg start_anchor_web='<a style="color: #ac2213;" href="'|add:support_url|add:'">'|safe start_anchor_email='<a style="color: #ac2213;" href="mailto:'|add:support_email|add:'">'|safe end_anchor='</a>'|safe %}
                 <br />
             </p>
         </td>
@@ -60,12 +61,11 @@
     <tr>
         <td>
             <p style="color: rgba(0,0,0,.75);">
-                {% filter force_escape %}
-                    {% blocktrans %}This email message was automatically sent by {{ lms_url }} because someone attempted to create an account on {{ platform_name }} using this email address.{% endblocktrans %}
-                {% endfilter %}
+                {% blocktrans %}This email message was automatically sent by {{ lms_url }} because someone attempted to create an account on {{ platform_name }} using this email address.{% endblocktrans %}
                 <br />
             </p>
         </td>
     </tr>
 </table>
+{% endwith %}
 {% endblock %}
