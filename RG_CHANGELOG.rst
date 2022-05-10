@@ -1,3 +1,7 @@
+[Fix] - 2022-05-10
+~~~~~~~~~~~~~~~~~~
+* change link color in the course invitation email template (RGOeX-1164)
+
 [Fix] - 2022-05-09
 ~~~~~~~~~~~~~~~~~~
 * Fix translations for course sharing text (RGOeX-1162)
