@@ -23,7 +23,7 @@ from six import text_type
 
         ## Translators: This text will be automatically posted to the student's
         ## Twitter account. {url} should appear at the end of the text.
-        tweet_text = _("I just enrolled in {number} {title} through {account}: {url}.").format(
+        tweet_text = _("I just enrolled in {number} {title} through {account}: {url}").format(
             number=course.number,
             title=course.display_name_with_default,
             account=static.get_value('course_about_twitter_account', settings.PLATFORM_TWITTER_ACCOUNT),
@@ -35,7 +35,7 @@ from six import text_type
         )
         tweet_action = u"http://twitter.com/intent/tweet?text={tweet_text}".format(tweet_text=six.moves.urllib.parse.quote(tweet_text.encode('UTF-8')))
 
-        facebook_text = _("I just enrolled in {number} {title}: {url}.").format(
+        facebook_text = _("I just enrolled in {number} {title}: {url}").format(
             number=course.number,
             title=course.display_name_with_default,
             #account=static.get_value('course_about_facebook_link', settings.PLATFORM_FACEBOOK_ACCOUNT),
