@@ -1,0 +1,11 @@
+.calc-main #calculator_wrapper form .input-wrapper .help-wrapper {
+    #calculator_hint {
+        border: none;
+        box-shadow: none;
+    }
+
+    .help {
+        max-height: calc(100vh - 90px);
+        overflow-y: auto !important;
+    }
+}

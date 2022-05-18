@@ -1,3 +1,9 @@
+[Fix] - 2022-05-17
+~~~~~~~~~~~~~~~~~~
+* Fixes for calculator in LMS legacy view - bug in lms footer (RGOeX-1241)
+* Fixes for calculator in LMS legacy view - calculator help popup (RGOeX-1242)
+* Fixes for calculator in LMS legacy view - calculator input outline (RGOeX-1243)
+
 [Fix] - 2022-05-10
 ~~~~~~~~~~~~~~~~~~
 * change link color in the course invitation email template (RGOeX-1164)
