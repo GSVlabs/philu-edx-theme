@@ -1,3 +1,7 @@
+[Fix] - 2022-05-26
+~~~~~~~~~~~~~~~~~~
+* Fix popup window in ORA while user send the answer (RGOeX-1238)
+
 [Fix] - 2022-05-17
 ~~~~~~~~~~~~~~~~~~
 * Fixes for calculator in LMS legacy view - bug in lms footer (RGOeX-1241)

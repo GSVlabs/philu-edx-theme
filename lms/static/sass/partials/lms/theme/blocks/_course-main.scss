@@ -401,11 +401,15 @@
     }
 }
 
-body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:hover {
-    color: $base-color;
+body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
+    z-index: 0;
 
-    .fa {
-        color: $base-color !important;
+    &:hover {
+        color: $base-color;
+
+        .fa {
+            color: $base-color !important;
+        }
     }
 }
 
@@ -506,4 +510,8 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:hover {
     &.xmodule_HtmlBlock {
         font-size: 1rem;
     }
+}
+
+.view-in-course .ui-widget-overlay {
+    position: fixed;
 }
