@@ -1,3 +1,7 @@
+.nav-utilities.has-utility-calculator {
+    z-index: 10000;
+}
+
 .calc-main #calculator_wrapper form .input-wrapper .help-wrapper {
     #calculator_hint {
         border: none;
@@ -5,7 +9,7 @@
     }
 
     .help {
-        max-height: calc(100vh - 90px);
+        max-height: calc(100vh - 110px);
         overflow-y: auto !important;
     }
 }
