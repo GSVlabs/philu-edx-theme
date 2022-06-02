@@ -1,3 +1,10 @@
+[Fix] - 2022-06-02
+~~~~~~~~~~~~~~~~~~
+* Fix course sharing text on course about page for FB and Tweeter (RGOeX-1233)
+
+  * FB text is translatable now
+  * Account variable in the text uses the platform_name if social media account was not set in the settings.
+
 [Fix] - 2022-05-26
 ~~~~~~~~~~~~~~~~~~
 * Fix popup window in ORA while user send the answer (RGOeX-1238)
