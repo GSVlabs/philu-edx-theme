@@ -35,6 +35,11 @@
         color: $base-color;
         transition: all .2s ease;
 
+        @include rtl {
+            right: auto;
+            left: 15px;
+        }
+
         &:hover,
         &:focus {
             opacity: 1;

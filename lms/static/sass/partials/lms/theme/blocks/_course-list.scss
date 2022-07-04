@@ -121,6 +121,22 @@
         .search-status-label {
             line-height: normal;
         }
+
+        .wrapper-search-input .discovery-submit {
+            box-shadow: none !important;
+
+            .loading-spinner {
+                background: $base-color;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                .loading-spinner {
+                    background: lighten($base-color, 10%);
+                }
+            }
+        }
     }
 
     aside.search-facets {

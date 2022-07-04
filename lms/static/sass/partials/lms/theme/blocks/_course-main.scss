@@ -25,7 +25,6 @@
             .search-form {
                 max-width: 100%;
                 box-sizing: border-box;
-                overflow: hidden;
                 display: flex;
 
                 .search-input {
@@ -34,6 +33,7 @@
 
                 .search-button {
                     border-radius: 0 3px 3px 0;
+                    position: relative;
                 }
 
                 .input-group-btn {
