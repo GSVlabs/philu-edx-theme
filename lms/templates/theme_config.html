@@ -79,11 +79,9 @@ data = {
     "title": Text(_("Welcome to {platform_name}")).format(
         platform_name=helpers.get_value('PLATFORM_NAME', settings.PLATFORM_NAME)
     ),
-    "description": Text(_("It works! Powered by Open edX{registered_trademark}")).format(
-        registered_trademark=HTML("<sup style='font-size: 65%'>&reg;</sup>")
-    )
+    "description": Text(_("It works! Powered by Open edX{registered_trademark}")).format(registered_trademark=HTML("<sup style='font-size: 65%'>&reg;</sup>"))
   },
-  "site_variable": settings.FEATURES.get('BASE_MAPLE_SITE_THEME', settings.DEFAULT_SITE_THEME),
+  "site_variable": settings.FEATURES.get('BASE_NUTMEG_SITE_THEME', settings.DEFAULT_SITE_THEME),
   "header_logo": "logo.svg",
   "footer_logo": "logo-footer.svg",
   "certificate_logo": "logo-certificate.svg",

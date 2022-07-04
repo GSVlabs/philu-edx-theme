@@ -1,3 +1,12 @@
+[Feat] - 2022-06-30
+~~~~~~~~~~~~~~~~~~~
+* Update theme for nutmeg (RGOeX-1267)
+
+[Fix] - 2022-06-24
+~~~~~~~~~~~~~~~~~~
+* Discover new page - fix active state for search submit button (RGOeX-1441)
+* Fix Cookie Policy Banner close button location on rtl (RGOeX-1442)
+
 [Fix] - 2022-06-02
 ~~~~~~~~~~~~~~~~~~
 * Fix course sharing text on course about page for FB and Tweeter (RGOeX-1233)
