@@ -1,3 +1,9 @@
+[Refactor] - 2022-07-01
+~~~~~~~~~~~~~~~~~~
+* Remove redundant code for course sharing through FB (RGOeX-1233)
+
+  * FB doesn't support the `quote` parameter for the sharing anymore
+
 [Feat] - 2022-06-30
 ~~~~~~~~~~~~~~~~~~~
 * Update theme for nutmeg (RGOeX-1267)
