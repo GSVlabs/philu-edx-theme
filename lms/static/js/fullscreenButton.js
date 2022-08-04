@@ -1,15 +1,16 @@
+/* eslint-disable no-undef */
 'use strict';
 
 $(function () {
-    const fs = document.getElementById('fullscreen'),
-          main = document.getElementById('course-content');
+    var fs = document.getElementById('fullscreen'),
+      main = document.getElementById('course-content');
 
     function changeXlink(val) {
         document.querySelector('.fullscreen-button use').setAttributeNS('http://www.w3.org/1999/xlink', 'href', val);
     }
 
     function toggleFullScreen() {
-        const fullscreen = document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+        var fullscreen = document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
 
         if (!fullscreen) {
             if (main.msRequestFullscreen) main.msRequestFullscreen();
@@ -31,10 +32,10 @@ $(function () {
     }
 
     function onFullScreenChange() {
-            const fullscreen = document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+        var fullscreen = document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
 
-            if (!fullscreen) changeXlink('#ico-fs-expand');
-        }
+        if (!fullscreen) changeXlink('#ico-fs-expand');
+    }
 
     if (fs) {
         fs.addEventListener('click', toggleFullScreen);

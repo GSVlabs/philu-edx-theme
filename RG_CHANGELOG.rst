@@ -1,3 +1,9 @@
+[Enhancement] - 2022-08-01
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Add CI checkers (conventions commits and eslint) (RGOeX-1661)
+
+  * Fix lint errors
+
 [Refactor] - 2022-07-01
 ~~~~~~~~~~~~~~~~~~
 * Remove redundant code for course sharing through FB (RGOeX-1233)

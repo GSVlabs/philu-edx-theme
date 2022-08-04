@@ -9,8 +9,6 @@
 
 **Merge checklist:**
 - [ ] Demo status: OK
-- [ ] Follow the code style of this project.
-- [ ] CI build is green
 - [ ] All related documentation is updated
 - [ ] Commits are squashed
 
