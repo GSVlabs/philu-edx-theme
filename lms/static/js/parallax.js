@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 $(window).scroll(function () {
     // js for parallax
     var scrollTop = $(window).scrollTop();
