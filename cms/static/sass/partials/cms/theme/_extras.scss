@@ -121,3 +121,9 @@
         color: $base-color;
     }
 }
+
+// fix image proportions in HTML xBlock
+
+.xmodule_display.xmodule_HtmlBlock img {
+    height: auto;
+}
