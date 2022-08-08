@@ -1,3 +1,7 @@
+[Fix] - 2022-08-08
+~~~~~~~~~~~~~~~~~~
+* ORA popup buttons color fix (RGOeX-1383)
+
 [Fix] - 2022-08-04
 ~~~~~~~~~~~~~~~~~~
 * Fix image proportions in the HTML xBlock (RGOeX-1660)

@@ -445,14 +445,7 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
 
     .list--actions .action--submit,
     .openassessment_student_info_form .action--submit-username {
-        background: $base-color;
-        border-color: $base-color;
-
-        &:hover,
-        &:focus {
-            background: $blue2;
-            border-color: $blue2;
-        }
+        @include flat($base-color);
     }
 
     .action--submit,
@@ -513,6 +506,20 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
     }
 }
 
-.view-in-course .ui-widget-overlay {
-    position: fixed;
+.view-in-course {
+    .ui-widget-overlay {
+        position: fixed;
+    }
+
+    .ora-confirmation-alert .ui-dialog-buttonpane {
+        .ui-button,
+        .ui-state-focus {
+            @include flat($base-color);
+
+            font: 400 14px/1.2 $font-family-sans-serif;
+            padding: 5px 10px;
+            box-shadow: none;
+            text-shadow: none !important;
+        }
+    }
 }
