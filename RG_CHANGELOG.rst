@@ -1,3 +1,7 @@
+[Fix] - 2022-08-04
+~~~~~~~~~~~~~~~~~~
+* Fix image proportions in the HTML xBlock (RGOeX-1660)
+
 [Enhancement] - 2022-08-01
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Add CI checkers (conventions commits and eslint) (RGOeX-1661)
