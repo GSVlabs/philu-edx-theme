@@ -7,11 +7,29 @@ $header-logo-height: 45px;
 $footer-logo-height: $header-logo-height;
 $certificate-logo-height: $header-logo-height;
 
+// fonts
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  // base font family
+$font-family-serif: $font-family-sans-serif;
+$georgia: $font-family-sans-serif;
+
 // settings for header
 $header-bg: #fff;
 $header-nav-link-color: $base-color;
 $header-nav-link-color-hover: darken($header-nav-link-color, 20%);
 $header-vertical-padding: 30px;
+$header-logo-offset-top: 0;
+
+// promo banner
+$promo-title-margin: 0;
+$promo-search-margin: 40px auto 0;
+$promo-title-color: #fff;
+$promo-title-font-desktop: 400 2em/1.4em $font-family-sans-serif;
+$promo-title-font-tablet: null;
+$promo-title-font-mobile: null;
+$promo-description-font-desktop: 400 1.2em/1.2em $font-family-sans-serif;
+$promo-description-font-tablet: null;
+$promo-description-font-mobile: null;
+$promo-description-color: #fff;
 
 // settings for footer
 $footer-bg: #2a374a;
@@ -48,12 +66,6 @@ $staff-color: #c2387d;                                          // color for sta
 $courseware-border-bottom-color: lighten($base-color, 21%);     // border-color for course cards
 $button-archive-color: #eee;                                    // base common `grey` variable
 $body-bg: #f5f5f5;                                              // body background color
-
-// fonts
-/* stylelint-disable */
-$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  // base font family
-$font-family-serif: $font-family-sans-serif;
-$georgia: $font-family-sans-serif;
 
 // offsets
 $program-card-offset: 15px;

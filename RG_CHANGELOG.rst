@@ -1,3 +1,9 @@
+[Enhancement] - 2022-08-10
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+* add ability to hide the "powered and created by" section by flag (RGOeX-1668)
+* update set of social links (RGOeX-1668)
+* update styles for simple base branding (RGOeX-1668)
+
 [Fix] - 2022-08-08
 ~~~~~~~~~~~~~~~~~~
 * ORA popup buttons color fix (RGOeX-1383)

@@ -43,11 +43,12 @@
             alt='${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}'
         >
       </a>
+      % if theme_config.html_data()['display_created_by_block']:
       <p class="footer-support">
         <a class="open-edx-link" target="_blank" href="https://open.edx.org/">
           <img alt="Powered by Open edX" ${'src=https://files.edx.org/openedx-logos/open-edx-logo-tag-dark.png' if theme_config.html_data()['footer_dark'] else 'src=https://files.edx.org/openedx-logos/open-edx-logo-tag.png'}>
         </a>
-        by RACCOONGANG
+        by Raccoon Gang
         <a class="rg-link" target="_blank" rel="nofollow" href="https://raccoongang.com/">
           % if theme_config.html_data()['footer_dark']:
           <svg class="svg-raccoon-white"  viewBox="0 0 100 100"><use xlink:href="#logo-raccoon" /></svg>
@@ -56,6 +57,7 @@
           % endif
         </a>
       </p>
+      % endif
     </div>
   </div>
 </footer>

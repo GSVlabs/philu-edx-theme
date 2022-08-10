@@ -36,6 +36,8 @@ header.global-header {
             }
 
             .logo {
+                position: relative;
+                top: $header-logo-offset-top;
                 height: $header-logo-height;
 
                 @include media-breakpoint-down(md) {
@@ -315,9 +317,9 @@ header.global-header {
         .course-search {
             @include clearfix();
 
-            max-width: 585px;
+            max-width: 584px;
             position: relative;
-            margin: 40px auto 0;
+            margin: $promo-search-margin;
 
             @include media-breakpoint-down(sm) {
                 margin-top: 30px;
@@ -330,7 +332,7 @@ header.global-header {
                 height: 43px;
 
                 &::placeholder {
-                    color: #4b4b4b;
+                    color: #7b7b7b;
                 }
             }
 
@@ -373,10 +375,44 @@ header.global-header {
 
             h1,
             p {
-                color: $white;
                 text-align: center;
                 text-shadow: 1px 2px 0 rgba(77, 77, 77, .34);
                 line-height: normal;
+            }
+
+            h1 {
+                font: $promo-title-font-desktop;
+                margin-bottom: $promo-title-margin;
+                color: $promo-title-color;
+
+                @if $promo-title-font-tablet {
+                    @include media-breakpoint-down(md) {
+                        font: $promo-title-font-tablet;
+                    }
+                }
+
+                @if $promo-title-font-mobile {
+                    @include media-breakpoint-down(sm) {
+                        font: $promo-title-font-mobile;
+                    }
+                }
+            }
+
+            p {
+                font: $promo-description-font-desktop;
+                color: $promo-description-color;
+
+                @if $promo-description-font-tablet {
+                    @include media-breakpoint-down(md) {
+                        font: $promo-description-font-tablet;
+                    }
+                }
+
+                @if $promo-description-font-mobile {
+                    @include media-breakpoint-down(sm) {
+                        font: $promo-description-font-mobile;
+                    }
+                }
             }
         }
     }
