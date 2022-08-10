@@ -205,6 +205,10 @@
         overflow: hidden;
     }
 
+    .bookmark-button:not(:hover):not(:focus):not(:active) {
+        color: $base-color;
+    }
+
     &.xmodule_HtmlBlock {
         img {
             max-width: 100%;
