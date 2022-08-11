@@ -53,6 +53,11 @@
     }
 }
 
+.certificate-scroll-container {
+    max-width: 100%;
+    overflow: auto;
+}
+
 .certificate-wrapper {
     position: relative;
     width: 29.7cm;

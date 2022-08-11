@@ -1,3 +1,7 @@
+[Enhancement] - 2022-08-11
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Add responsive for the certificate (RGOeX-1566)
+
 [Enhancement] - 2022-08-10
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 * add ability to hide the "powered and created by" section by flag (RGOeX-1668)
