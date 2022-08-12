@@ -1,3 +1,7 @@
+[Fix] - 2022-08-11
+~~~~~~~~~~~~~~~~~~
+* Fix search button outline on focus (RGOeX-1425)
+
 [Enhancement] - 2022-08-11
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Add responsive for the certificate (RGOeX-1566)
