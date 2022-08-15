@@ -1,3 +1,7 @@
+[Fix] - 2022-08-15
+~~~~~~~~~~~~~~~~~~
+* Add open graph image for social sharing (RGOeX-1233)
+
 [Fix] - 2022-08-11
 ~~~~~~~~~~~~~~~~~~
 * Fix search button outline on focus (RGOeX-1425)
