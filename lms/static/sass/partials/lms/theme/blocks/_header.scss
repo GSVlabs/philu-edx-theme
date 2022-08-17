@@ -96,6 +96,10 @@ header.global-header {
             margin: 0;
             align-items: center;
 
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+            }
+
             > *:not(#language-settings-form) {
                 @include media-breakpoint-down(md) {
                     display: none;
@@ -129,9 +133,34 @@ header.global-header {
                         border-bottom: none;
                     }
 
+                    &.register-btn,
                     &.sign-in-btn,
                     &.shopping-cart {
-                        border-color: $base-color;
+                        border-color: $header-register-bg;
+                    }
+
+                    &.register-btn {
+                        color: $header-register-bg;
+
+                        &:hover,
+                        &:active,
+                        &:focus {
+                            background: $header-register-bg;
+                            color: $header-login-bg;
+                        }
+                    }
+
+                    &.sign-in-btn,
+                    &.shopping-cart {
+                        background: $header-register-bg;
+                        color: $header-login-bg;
+
+                        &:hover,
+                        &:active,
+                        &:focus {
+                            background: none;
+                            color: $header-register-bg;
+                        }
                     }
 
                     &:hover:not([role="menuitem"]):not(.btn) {
@@ -178,12 +207,13 @@ header.global-header {
     }
 
     .hamburger-menu {
-        top: 10px;
-        height: 26px;
+        top: calc(#{$header-logo-height} / 2);
+        transform: translateY(-50%);
+        height: 25px;
         padding-bottom: 0;
 
         .line {
-            background: $base-color;
+            background: $hamburger-btn-color;
         }
     }
 
@@ -222,6 +252,10 @@ header.global-header {
         float: none;
         padding: 0;
 
+        @include media-breakpoint-down(md) {
+            margin-top: 15px;
+        }
+
         label {
             margin: 0;
             position: relative;
@@ -241,11 +275,11 @@ header.global-header {
             transition: all .2s ease;
 
             &:hover {
-                border-color: $link-hover !important;
-                color: $link-hover;
+                border-color: $header-register-bg !important;
+                color: $header-register-bg;
 
                 & + .select-arrow-icon {
-                    fill: $link-hover;
+                    fill: $header-register-bg;
                 }
             }
         }
