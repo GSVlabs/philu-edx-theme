@@ -1,3 +1,12 @@
+[Fix] - 2022-08-17
+~~~~~~~~~~~~~~~~~~
+* Vertical alignment for hamburger menu button (RGOeX-1732)
+* Add variables to change color for header's buttons - login and register (RGOeX-1732)
+* Horizontal alignment languages select (RGOeX-1732)
+* Language select hover color is related to buttons color (RGOeX-1732)
+* Variable to change color for hamburger menu button (RGOeX-1732)
+* Update rules for commitlint config from openedx config
+
 [Fix] - 2022-08-15
 ~~~~~~~~~~~~~~~~~~
 * Add open graph image for social sharing (RGOeX-1233)
