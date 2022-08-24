@@ -270,6 +270,64 @@
                     display: none;
                 }
             }
+
+            .video-controls {
+                .control:active,
+                .is-active.control,
+                .active.control,
+                .secondary-controls .toggle-transcript.is-active,
+                .secondary-controls .quality-control.active {
+                    color: $xblock-video-light !important;
+                }
+
+                .secondary-controls {
+                    .menu-container .menu {
+                        &.video-speeds {
+                            width: 100%;
+                        }
+
+                        li.is-active {
+                            .speed-option,
+                            .control-lang {
+                                color: $xblock-video-light;
+                                border-color: $xblock-video-light;
+                            }
+                        }
+                    }
+
+                    .volume .volume-slider-container .volume-slider {
+                        .ui-slider-range {
+                            background: $xblock-video-dark;
+                            border-color: $xblock-video-dark;
+                        }
+
+                        .ui-slider-handle,
+                        .ui-slider-handle:hover,
+                        .ui-slider-handle:focus {
+                            background: $xblock-video-light;
+                            border-color: $xblock-video-light;
+                        }
+                    }
+                }
+
+                .slider {
+                    .ui-widget-header {
+                        background: $xblock-video-dark;
+                        border-color: $xblock-video-dark;
+                    }
+
+                    .ui-slider-handle,
+                    .ui-slider-handle:hover,
+                    .ui-slider-handle:focus {
+                        background: $xblock-video-light;
+                        border-color: $xblock-video-light;
+                    }
+                }
+            }
+
+            .closed-captions.is-visible {
+                color: $xblock-video-light;
+            }
         }
 
         .subtitles {

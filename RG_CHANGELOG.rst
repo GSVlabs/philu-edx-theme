@@ -1,3 +1,8 @@
+[Feature] - 2022-08-23
+~~~~~~~~~~~~~~~~~~~~~~
+* Color for selected and active elements in default Video X-Block was changed to violet color, which was used in appsembler xblock video - LMS and CMS (RGOeX-1395)
+* Width of Speed dropdown was matched to Speed icon (RGOeX-1402)
+
 [Fix] - 2022-08-17
 ~~~~~~~~~~~~~~~~~~
 * Vertical alignment for hamburger menu button (RGOeX-1732)

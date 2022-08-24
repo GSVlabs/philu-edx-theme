@@ -115,10 +115,47 @@
     cursor: pointer;
 }
 
-.xmodule_display.xmodule_VideoBlock .video .subtitles .subtitles-menu li {
-    &,
-    a {
-        color: $base-color;
+.xmodule_display.xmodule_VideoBlock .video {
+    .subtitles .subtitles-menu li {
+        &,
+        a {
+            color: $base-color;
+        }
+    }
+
+    .video-wrapper {
+        .video-controls {
+            .control:active,
+            .is-active.control,
+            .active.control {
+                color: $xblock-video-light;
+            }
+
+            .secondary-controls {
+                .toggle-transcript.is-active,
+                .quality-control.active {
+                    color: $xblock-video-light;
+                }
+
+                .menu-container .menu {
+                    &.video-speeds {
+                        width: 100%;
+                    }
+
+                    li.is-active {
+                        .speed-option,
+                        .control-lang {
+                            color: $xblock-video-light;
+                            border-color: $xblock-video-light;
+                        }
+                    }
+                }
+            }
+        }
+
+        .closed-captions.is-visible {
+            color: $xblock-video-light;
+        }
     }
 }
 
