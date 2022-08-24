@@ -2,6 +2,9 @@
 $base-color: #c15c2f;
 $base-color-hover: darken($base-color, 20%);
 
+//xblocks
+$xblock-video-light: #cb598d;
+
 // overriding default values
 $theme-colors: ("primary": $base-color);
 $color-live: $base-color;
