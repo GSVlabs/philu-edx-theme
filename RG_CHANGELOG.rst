@@ -1,3 +1,7 @@
+[Fix] - 2022-08-25
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+* backport "Sign-up" button url fix from edx-platform (RGOeX-1597)
+
 [Feature] - 2022-08-23
 ~~~~~~~~~~~~~~~~~~~~~~
 * Color for selected and active elements in default Video X-Block was changed to violet color, which was used in appsembler xblock video - LMS and CMS (RGOeX-1395)
