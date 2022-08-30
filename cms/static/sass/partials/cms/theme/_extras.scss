@@ -53,11 +53,18 @@
 
 .mce-primary {
     background: $base-color;
-    border-color: $base-color-hover;
+    border-color: $base-color;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         background: $base-color-hover;
+        border-color: $base-color-hover;
+
+        button {
+            background: $base-color-hover;
+            border-color: $base-color-hover;
+        }
     }
 }
 
@@ -83,6 +90,14 @@
 
 #edit-image-modal #root.SFE {
     .btn-primary {
+        &:hover,
+        &:focus,
+        &:active {
+            background: $base-color-hover;
+            border-color: $base-color;
+            box-shadow: 0 0 0 .2rem rgba($base-color, .5);
+        }
+
         &.disabled,
         &:disabled {
             background: rgba($base-color-hover, .5);
