@@ -4,7 +4,7 @@
 {% load i18n %}
 {% load static %}
 {% block content %}
-{% with lms_url='<a href="'|add:lms_url|add:'" style="color: #a8725a;">'|safe|add:lms_url|add:'</a>'|safe %}
+{% with lms_url='<a href="'|add:lms_url|add:'" style="color: #c15c2f;">'|safe|add:lms_url|add:'</a>'|safe %}
 <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
 {% if route_enabled %}
     <tr>
@@ -51,7 +51,7 @@
                 {% blocktrans trimmed asvar assist_msg %}
                 If you need help, please use our web form at {start_anchor_web}{{ support_url }}{end_anchor} or email {start_anchor_email}{{ support_email }}{end_anchor}.
                 {% endblocktrans %}
-                {% interpolate_html assist_msg start_anchor_web='<a style="color: #a8725a;" href="'|add:support_url|add:'">'|safe start_anchor_email='<a style="color: #a8725a;" href="mailto:'|add:support_email|add:'">'|safe end_anchor='</a>'|safe %}
+                {% interpolate_html assist_msg start_anchor_web='<a style="color: #c15c2f;" href="'|add:support_url|add:'">'|safe start_anchor_email='<a style="color: #c15c2f;" href="mailto:'|add:support_email|add:'">'|safe end_anchor='</a>'|safe %}
                 <br />
             </p>
         </td>
