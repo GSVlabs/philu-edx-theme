@@ -1,9 +1,10 @@
 [Fix] - 2022-08-30
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 * Added base color for focused and active states on buttons inside tinymce modals (RGOeX-1734)
+* Remove text shadow from discussion buttons on hover inside course (RGOeX-1767)
 
 [Fix] - 2022-08-25
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 * backport "Sign-up" button url fix from edx-platform (RGOeX-1597)
 
 [Feature] - 2022-08-23
