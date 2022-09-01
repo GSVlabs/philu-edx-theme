@@ -1,3 +1,7 @@
+[Enhancement] - 2022-08-30
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Based color was changed in the email templates, extra background was removed (RGOeX-1712)
+
 [Fix] - 2022-08-30
 ~~~~~~~~~~~~~~~~~~
 * Added base color for focused and active states on buttons inside tinymce modals (RGOeX-1734)
