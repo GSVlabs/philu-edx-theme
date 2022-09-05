@@ -312,3 +312,9 @@
     width: 100%;
     text-align: center;
 }
+
+.footer-app {
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
