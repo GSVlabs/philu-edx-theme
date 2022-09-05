@@ -1,3 +1,7 @@
+[Fix] - 2022-08-30
+~~~~~~~~~~~~~~~~~~
+* fixed responsive for Course Certificate Error for 767-476 Height Breakpoint (RGOeX-1717)
+
 [Enhancement] - 2022-08-30
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Based color was changed in the email templates, extra background was removed (RGOeX-1712)
