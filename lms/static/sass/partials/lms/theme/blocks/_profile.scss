@@ -142,8 +142,11 @@
             box-shadow: none;
         }
 
-        .social-links a:hover {
-            text-decoration: none;
+        .social-links a {
+            &:focus,
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }

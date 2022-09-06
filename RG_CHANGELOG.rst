@@ -1,5 +1,9 @@
 [Fix] - 2022-08-30
 ~~~~~~~~~~~~~~~~~~
+* removed unexpected element after clicking on Social Media Icon in the profile legacy (RGOeX-1718)
+
+[Fix] - 2022-08-30
+~~~~~~~~~~~~~~~~~~
 * fixed responsive for Course Certificate Error for 767-476 Height Breakpoint (RGOeX-1717)
 
 [Enhancement] - 2022-08-30
