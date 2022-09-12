@@ -1,4 +1,8 @@
-[Fix] - 2022-08-30
+[Fix] - 2022-09-12
+~~~~~~~~~~~~~~~~~~
+* fixed the default "Start" button for ".mp4" type link of the video in the default Video X-Block (RGOeX-1854)
+
+[Fix] - 2022-09-05
 ~~~~~~~~~~~~~~~~~~
 * removed unexpected element after clicking on Social Media Icon in the profile legacy (RGOeX-1718)
 
