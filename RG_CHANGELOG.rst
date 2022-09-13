@@ -1,3 +1,8 @@
+[Fix] - 2022-09-13
+~~~~~~~~~~~~~~~~~~
+* fixed problem with "View SCORM reports" in MFE and Legacy interfaces (RGOeX-900)
+* fixed markup error for "View Scorm Reports" (RGOeX-932)
+
 [Fix] - 2022-09-12
 ~~~~~~~~~~~~~~~~~~
 * fixed the default "Start" button for ".mp4" type link of the video in the default Video X-Block (RGOeX-1854)
