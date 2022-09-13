@@ -606,6 +606,12 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
         position: fixed;
     }
 
+    .ui-autocomplete.ui-menu {
+        max-height: 275px;
+        overflow: auto;
+        z-index: 3;
+    }
+
     .ora-confirmation-alert .ui-dialog-buttonpane {
         .ui-button,
         .ui-state-focus {
@@ -615,6 +621,70 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
             padding: 5px 10px;
             box-shadow: none;
             text-shadow: none !important;
+        }
+    }
+
+    .scorm-xblock {
+        button.reload-report {
+            font-size: 0;
+            border-color: $base-color;
+            position: relative;
+
+            &:after {
+                content: "";
+                width: 16px;
+                height: 16px;
+                background-color: $base-color;
+                -webkit-mask-image: url("#{$static-path}/images/rotate-right-solid.svg");
+                mask-image: url("#{$static-path}/images/rotate-right-solid.svg");
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:hover:after {
+                background-color: $white;
+            }
+        }
+
+        .report .renderjson {
+            .object {
+                &:last-child .disclosure:after {
+                    transform: translateY(-50%) rotate(180deg);
+                }
+
+                .disclosure {
+                    font-size: 0;
+                    padding: 8px 12px 8px 8px;
+                    vertical-align: middle;
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        background-color: $base-color;
+                        -webkit-mask-image: url("#{$static-path}/images/circle-down-solid.svg");
+                        mask-image: url("#{$static-path}/images/circle-down-solid.svg");
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+    &.view-in-mfe {
+        .ui-autocomplete.ui-menu {
+            max-height: 110px;
+        }
+
+        span.reports-togglable:not(.reports-togglable-off) {
+            display: block;
+            padding-bottom: 125px;
         }
     }
 }
