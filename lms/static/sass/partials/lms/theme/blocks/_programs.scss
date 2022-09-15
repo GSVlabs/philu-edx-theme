@@ -55,8 +55,37 @@
             color: $base-color;
         }
 
-        .program-details-header .authoring-organizations .heading {
-            color: $base-color;
+        .certificate-list {
+            @include media-breakpoint-down(lg) {
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .program-header.full-width-banner {
+            margin: 0 0 30px;
+        }
+
+        .program-details-header {
+            @include media-breakpoint-down(lg) {
+                flex-direction: column;
+            }
+
+            .authoring-organizations {
+                @include media-breakpoint-down(lg) {
+                    text-align: left;
+                }
+
+                .heading {
+                    color: $base-color;
+                }
+            }
+        }
+
+        .program-details-content {
+            @include media-breakpoint-down(lg) {
+                padding: 0;
+            }
         }
 
         .program-course-card {
@@ -92,6 +121,11 @@
 }
 
 .program-sidebar {
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+        padding: 0;
+    }
+
     .divider-heading {
         color: $base-color;
     }
@@ -193,13 +227,15 @@
 }
 
 .program-progress {
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(lg) {
+        text-align: center;
         width: 100%;
+        margin: 0 auto 50px !important;
     }
 }
 
 .progress-circle-wrapper {
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(lg) {
         width: 270px;
         margin: -20px auto 0;
     }
