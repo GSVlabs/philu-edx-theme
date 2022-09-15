@@ -1,3 +1,7 @@
+[Fix] - 2022-09-15
+~~~~~~~~~~~~~~~~~~
+* fixed Program Dashboard Basic Theme due to upstream changes
+
 [Fix] - 2022-09-13
 ~~~~~~~~~~~~~~~~~~
 * fixed problem with "View SCORM reports" in MFE and Legacy interfaces (RGOeX-900)
