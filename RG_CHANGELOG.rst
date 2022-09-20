@@ -2,6 +2,10 @@
 ~~~~~~~~~~~~~~~~~~
 * fixed Program Dashboard Basic Theme due to upstream changes
 
+[Fix] - 2022-09-16
+~~~~~~~~~~~~~~~~~~
+* Decreased gaps between records of Task Status table (RGOeX-1834)
+
 [Fix] - 2022-09-13
 ~~~~~~~~~~~~~~~~~~
 * fixed problem with "View SCORM reports" in MFE and Legacy interfaces (RGOeX-900)
