@@ -380,8 +380,15 @@
             }
         }
 
-        section.idash-section#data_download .problem-browser input {
-            vertical-align: middle;
+        section.idash-section#data_download {
+            .problem-browser input {
+                vertical-align: middle;
+            }
+
+            #report-downloads-table .slickgrid .slick-cell {
+                white-space: nowrap;
+                word-break: normal;
+            }
         }
 
         section.idash-section#course_info .enrollment-wrapper {
@@ -508,10 +515,6 @@
                     padding: 15px;
                 }
             }
-        }
-
-        .slickgrid .slick-cell {
-            height: 36px;
         }
     }
 
