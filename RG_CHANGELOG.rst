@@ -4,6 +4,10 @@
 
 [Fix] - 2022-09-13
 ~~~~~~~~~~~~~~~~~~
+* Username column modified to one row with max width, Type and Status columns - removed line break (RGOeX-1823)
+
+[Fix] - 2022-09-13
+~~~~~~~~~~~~~~~~~~
 * fixed problem with "View SCORM reports" in MFE and Legacy interfaces (RGOeX-900)
 * fixed markup error for "View Scorm Reports" (RGOeX-932)
 
