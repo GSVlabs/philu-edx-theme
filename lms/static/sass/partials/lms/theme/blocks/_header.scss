@@ -1,6 +1,6 @@
 header.global-header {
     border-bottom: none;
-    box-shadow: 0 0 6px 0 rgba($black, .75);
+    box-shadow: 0 2px 4px 0 rgba($black, .3);
     padding: $header-vertical-padding 0;
     background: $header-bg;
     overflow: visible;
@@ -219,12 +219,23 @@ header.global-header {
 
     .mobile-menu {
         margin: $header-vertical-padding 0 #{-$header-vertical-padding};
+        border-top: 1px solid #ccc;
 
         .mobile-nav-link a {
             box-sizing: border-box;
 
             &:not(:hover):not(:focus) {
                 color: $link-color;
+            }
+
+            &:after {
+                display: none;
+            }
+
+            &:hover,
+            &:focus {
+                background: none;
+                color: $base-color;
             }
         }
     }
