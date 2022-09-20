@@ -760,6 +760,28 @@
     }
 }
 
-.exam-attempts-table tr td:last-child {
-    text-align: center;
+.exam-attempts-table {
+    tr td {
+        &:nth-child(2) {
+            max-width: 150px;
+        }
+
+        &:nth-child(5),
+        &:nth-child(8),
+        &:last-child {
+            white-space: nowrap;
+        }
+
+        &:last-child {
+            text-align: center;
+
+            a {
+                color: $link-color;
+
+                &:hover {
+                    color: $link-hover;
+                }
+            }
+        }
+    }
 }
