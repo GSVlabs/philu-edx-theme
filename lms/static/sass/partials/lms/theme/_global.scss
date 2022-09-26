@@ -114,8 +114,20 @@ body[class] {
 }
 
 body {
-    &.view-in-mfe #content {
-        background: $white;
+    &.view-in-mfe {
+        #discussion-alert {
+            margin: 0 !important;
+            top: 50% !important;
+            transform: translate(-50%, -50%) scale(.85);
+
+            @include media-breakpoint-down(xs) {
+                transform: translate(-50%, -50%) scale(.55);
+            }
+        }
+
+        #content {
+            background: $white;
+        }
     }
 
     &.small,
