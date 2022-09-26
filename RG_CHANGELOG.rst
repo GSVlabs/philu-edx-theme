@@ -1,3 +1,8 @@
+[Fix] - 2022-09-23
+~~~~~~~~~~~~~~~~~~
+* fixed discussion-alert when it's appear in mfe when forum is stopped (RGOeX-1845)
+  - This commit should be skipped when we start the sync process with the olive branch if the `master PR <https://github.com/openedx/edx-platform/pull/31034>`_ will be merged by then
+
 [Fix] - 2022-09-16
 ~~~~~~~~~~~~~~~~~~
 * Decreased gaps between records of Task Status table (RGOeX-1834)
