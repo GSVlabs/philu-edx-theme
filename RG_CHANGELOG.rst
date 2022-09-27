@@ -1,145 +1,90 @@
-[Fix] - 2022-09-23
-~~~~~~~~~~~~~~~~~~
-* fixed discussion-alert when it's appear in mfe when forum is stopped (RGOeX-1845)
-  - This commit should be skipped when we start the sync process with the olive branch if the `master PR <https://github.com/openedx/edx-platform/pull/31034>`_ will be merged by then
+Change Log
+##########
 
-[Fix] - 2022-09-16
-~~~~~~~~~~~~~~~~~~
-* Decreased gaps between records of Task Status table (RGOeX-1834)
+..
+   All enhancements and patches to rg instructor analytics will be documented
+   in this file.  It adheres to the structure of https://keepachangelog.com/ ,
+   but in reStructuredText instead of Markdown (for ease of incorporation into
+   Sphinx documentation and the PyPI description).
 
-[Fix] - 2022-09-15
-~~~~~~~~~~~~~~~~~~
-* fixed Program Dashboard Basic Theme due to upstream changes
+   This project adheres to Semantic Versioning (https://semver.org/).
 
-[Fix] - 2022-09-13
-~~~~~~~~~~~~~~~~~~
-* Branded color for ORA in studio (RGOeX-1824)
-* Username column modified to one row with max width, Type and Status columns - removed line break (RGOeX-1823)
+.. There should always be an "Unreleased" section for changes pending release.
 
-[Fix] - 2022-09-13
-~~~~~~~~~~~~~~~~~~
-* fixed problem with "View SCORM reports" in MFE and Legacy interfaces (RGOeX-900)
-* fixed markup error for "View Scorm Reports" (RGOeX-932)
+[Unreleased]
+************
 
-[Feature] - 2022-09-12
-~~~~~~~~~~~~~~~~~~~~~~
-* Changes for mobile legacy header dropdown to comparing with mobile MFE header dropdown (RGOeX-1745)
+[nutmeg-rg.1] 2022-09-30 (Nutmeg RG release)
+********************************************
 
-[Fix] - 2022-09-12
-~~~~~~~~~~~~~~~~~~
-* fixed the default "Start" button for ".mp4" type link of the video in the default Video X-Block (RGOeX-1854)
+Added:
+======
 
-[Fix] - 2022-09-05
-~~~~~~~~~~~~~~~~~~
-* removed unexpected element after clicking on Social Media Icon in the profile legacy (RGOeX-1718)
-
-[Fix] - 2022-08-30
-~~~~~~~~~~~~~~~~~~
-* fixed responsive for Course Certificate Error for 767-476 Height Breakpoint (RGOeX-1717)
-
-[Enhancement] - 2022-08-30
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Based color was changed in the email templates, extra background was removed (RGOeX-1712)
-
-[Fix] - 2022-08-30
-~~~~~~~~~~~~~~~~~~
-* Added base color for focused and active states on buttons inside tinymce modals (RGOeX-1734)
-* Remove text shadow from discussion buttons on hover inside course (RGOeX-1767)
-
-[Fix] - 2022-08-25
-~~~~~~~~~~~~~~~~~~
-* backport "Sign-up" button url fix from edx-platform (RGOeX-1597)
-
-[Feature] - 2022-08-23
-~~~~~~~~~~~~~~~~~~~~~~
 * Color for selected and active elements in default Video X-Block was changed to violet color, which was used in appsembler xblock video - LMS and CMS (RGOeX-1395)
 * Width of Speed dropdown was matched to Speed icon (RGOeX-1402)
+* Update theme for nutmeg (RGOeX-1267)
 
-[Fix] - 2022-08-17
-~~~~~~~~~~~~~~~~~~
+Fixes:
+======
+
+* fixed discussion-alert when it's appear in mfe when forum is stopped (RGOeX-1845)
+
+  * This commit should be skipped when we start the sync process with the olive branch if the `master PR <https://github.com/openedx/edx-platform/pull/31034>`_ will be merged by then
+
+* Decreased gaps between records of Task Status table (RGOeX-1834)
+* fixed Program Dashboard Basic Theme due to upstream changes
+* Username column modified to one row with max width, Type and Status columns - removed line break (RGOeX-1823)
+* Branded color for ORA in studio (RGOeX-1824)
+* fixed problem with "View SCORM reports" in MFE and Legacy interfaces (RGOeX-900)
+* fixed markup error for "View Scorm Reports" (RGOeX-932)
+* Changes for mobile legacy header dropdown to comparing with mobile MFE header dropdown (RGOeX-1745)
+* fixed the default "Start" button for ".mp4" type link of the video in the default Video X-Block (RGOeX-1854)
+* removed unexpected element after clicking on Social Media Icon in the profile legacy (RGOeX-1718)
+* fixed responsive for Course Certificate Error for 767-476 Height Breakpoint (RGOeX-1717)
+* Added base color for focused and active states on buttons inside tinymce modals (RGOeX-1734)
+* Remove text shadow from discussion buttons on hover inside course (RGOeX-1767)
+* backport "Sign-up" button url fix from edx-platform (RGOeX-1597)
 * Vertical alignment for hamburger menu button (RGOeX-1732)
 * Add variables to change color for header's buttons - login and register (RGOeX-1732)
 * Horizontal alignment languages select (RGOeX-1732)
 * Language select hover color is related to buttons color (RGOeX-1732)
 * Variable to change color for hamburger menu button (RGOeX-1732)
 * Update rules for commitlint config from openedx config
-
-[Fix] - 2022-08-15
-~~~~~~~~~~~~~~~~~~
 * Add open graph image for social sharing (RGOeX-1233)
-
-[Fix] - 2022-08-11
-~~~~~~~~~~~~~~~~~~
 * Fix search button outline on focus (RGOeX-1425)
-
-[Enhancement] - 2022-08-11
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Add responsive for the certificate (RGOeX-1566)
-
-[Enhancement] - 2022-08-10
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-* add ability to hide the "powered and created by" section by flag (RGOeX-1668)
-* update set of social links (RGOeX-1668)
-* update styles for simple base branding (RGOeX-1668)
-
-[Fix] - 2022-08-08
-~~~~~~~~~~~~~~~~~~
 * ORA popup buttons color fix (RGOeX-1383)
-
-[Fix] - 2022-08-04
-~~~~~~~~~~~~~~~~~~
 * Fix image proportions in the HTML xBlock (RGOeX-1660)
-
-[Enhancement] - 2022-08-01
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Add CI checkers (conventions commits and eslint) (RGOeX-1661)
-
-  * Fix lint errors
-
-[Refactor] - 2022-07-01
-~~~~~~~~~~~~~~~~~~
-* Remove redundant code for course sharing through FB (RGOeX-1233)
-
-  * FB doesn't support the `quote` parameter for the sharing anymore
-
-[Feat] - 2022-06-30
-~~~~~~~~~~~~~~~~~~~
-* Update theme for nutmeg (RGOeX-1267)
-
-[Fix] - 2022-06-24
-~~~~~~~~~~~~~~~~~~
 * Discover new page - fix active state for search submit button (RGOeX-1441)
 * Fix Cookie Policy Banner close button location on rtl (RGOeX-1442)
-
-[Fix] - 2022-06-02
-~~~~~~~~~~~~~~~~~~
 * Fix course sharing text on course about page for FB and Tweeter (RGOeX-1233)
 
   * FB text is translatable now
   * Account variable in the text uses the platform_name if social media account was not set in the settings.
 
-[Fix] - 2022-05-26
-~~~~~~~~~~~~~~~~~~
 * Fix popup window in ORA while user send the answer (RGOeX-1238)
-
-[Fix] - 2022-05-17
-~~~~~~~~~~~~~~~~~~
 * Fixes for calculator in LMS legacy view - bug in lms footer (RGOeX-1241)
 * Fixes for calculator in LMS legacy view - calculator help popup (RGOeX-1242)
 * Fixes for calculator in LMS legacy view - calculator input outline (RGOeX-1243)
-
-[Fix] - 2022-05-10
-~~~~~~~~~~~~~~~~~~
 * change link color in the course invitation email template (RGOeX-1164)
-
-[Fix] - 2022-05-09
-~~~~~~~~~~~~~~~~~~
 * Fix translations for course sharing text (RGOeX-1162)
-
-[Fix] - 2022-05-02
-~~~~~~~~~~~~~~~~~~
 * style links in emails (RGOeX-122)
 * add brand color for video transcript links (RGOeX-1148)
+
+Changed:
+========
+
+* Based color was changed in the email templates, extra background was removed (RGOeX-1712)
+* Add responsive for the certificate (RGOeX-1566)
+* add ability to hide the "powered and created by" section by flag (RGOeX-1668)
+* update set of social links (RGOeX-1668)
+* update styles for simple base branding (RGOeX-1668)
+* Add CI checkers (conventions commits and eslint) (RGOeX-1661)
+
+  * Fix lint errors
+
+* Remove redundant code for course sharing through FB (RGOeX-1233)
+
+  * FB doesn't support the `quote` parameter for the sharing anymore
 
 [Maple RG Release] - 2022-04-22
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
