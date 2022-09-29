@@ -13,6 +13,7 @@
 
 [Fix] - 2022-09-13
 ~~~~~~~~~~~~~~~~~~
+* Branded color for ORA in studio (RGOeX-1824)
 * Username column modified to one row with max width, Type and Status columns - removed line break (RGOeX-1823)
 
 [Fix] - 2022-09-13

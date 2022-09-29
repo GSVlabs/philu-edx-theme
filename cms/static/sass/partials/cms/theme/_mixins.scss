@@ -1,0 +1,35 @@
+// function for checking light color or not
+
+@function is-light($hex-color) {
+    $-local-red: red(rgba($hex-color, 1));
+    $-local-green: green(rgba($hex-color, 1));
+    $-local-blue: blue(rgba($hex-color, 1));
+
+    $-local-lightness: ($-local-red * .2126 + $-local-green * .7152 + $-local-blue * .0722) / 255;
+
+    @return $-local-lightness > .6;
+}
+
+// Flat Button
+
+@mixin flat($mixin-color) {
+    $initial-color: $mixin-color;
+    $color: hsl(0, 0, 100%);
+
+    @if is-light($mixin-color) {
+        $color: hsl(0, 0, 20%);
+    }
+
+    color: $color;
+    border-color: $base-color;
+    background: $base-color;
+    border-radius: 3px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: $link-hover;
+        border-color: $link-hover;
+        color: $color;
+    }
+}
