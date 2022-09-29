@@ -211,3 +211,100 @@
 .xmodule_display.xmodule_HtmlBlock img {
     height: auto;
 }
+
+// ORA branding
+
+.xblock .openassessment {
+    .is--in-progress.openassessment__steps__step {
+        border-top-color: $base-color;
+    }
+
+    .openassessment__steps__step.is--in-progress .step__status__value {
+        background: $base-color;
+    }
+
+    .submission__answer__part__prompt__copy a,
+    .message .message__content a {
+        color: $base-color;
+
+        &:hover,
+        &:focus {
+            color: $base-color-hover;
+            border-color: $base-color-hover;
+        }
+    }
+
+    .ui-slidable__container .ui-slidable:not([disabled]) {
+        color: $base-color;
+
+        &:hover,
+        &:focus {
+            color: lighten($base-color, 10%);
+        }
+    }
+
+    .list--actions .action--submit,
+    .openassessment_student_info_form .action--submit-username {
+        @include flat($base-color);
+    }
+
+    .action--submit,
+    .step--self-assessment .self-assessment__assessment .action--save,
+    .step--peer-assessment .peer-assessment__assessment .action--save,
+    .step--response .delete__uploaded__file,
+    .step--response .action--upload,
+    .step--response .response__submission__actions .action--save,
+    .step--response .response__submission__content .action--save {
+        border: 1px solid $base-color;
+        color: $base-color;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: lighten($base-color, 10%);
+            border-color: lighten($base-color, 10%);
+            color: $white;
+        }
+
+        &:disabled {
+            border-color: #b4b3b3;
+            color: #b4b3b3;
+        }
+    }
+
+    .wrapper--staff-area .wrapper--staff-toolbar {
+        .ui-staff__button {
+            transition: all .2s ease;
+
+            &:not(.is--active):hover {
+                background: lighten($base-color, 10%);
+            }
+        }
+
+        a.button-staff-studio {
+            display: inline-block;
+        }
+    }
+
+    .step--response .action--upload {
+        @include media-breakpoint-down(sm) {
+            float: none;
+            margin-top: 0;
+        }
+    }
+
+    .step--self-assessment .self-assessment__assessment,
+    .step--peer-assessment .peer-assessment__assessment,
+    .step--response .response__submission__actions,
+    .step--response .response__submission__content {
+        .action--save {
+            @include media-breakpoint-down(xs) {
+                min-width: 195px;
+            }
+        }
+    }
+
+    div.submission__answer__part__text__value:empty {
+        display: none;
+    }
+}
