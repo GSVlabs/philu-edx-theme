@@ -14,6 +14,11 @@ Change Log
 [Unreleased]
 ************
 
+[Fix] - 2022-09-30
+~~~~~~~~~~~~~~~~~~
+* re-fixed discussion-alert when it's appear in mfe when forum is stopped, for staff and regular user  (RGOeX-1845)
+  - This commit should be skipped when we start the sync process with the olive branch if the `master PR <https://github.com/openedx/edx-platform/pull/31034>`_ will be merged by then
+
 [nutmeg-rg.1] 2022-09-30 (Nutmeg RG release)
 ********************************************
 
