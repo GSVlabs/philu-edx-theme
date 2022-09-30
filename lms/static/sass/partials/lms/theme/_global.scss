@@ -118,10 +118,19 @@ body {
         #discussion-alert {
             margin: 0 !important;
             top: 50% !important;
-            transform: translate(-50%, -50%) scale(.85);
+            transform: translate(-50%, -50%) scale(.7);
 
             @include media-breakpoint-down(xs) {
                 transform: translate(-50%, -50%) scale(.55);
+            }
+
+            .inner-wrapper header h2 {
+                font-size: 22px;
+            }
+
+            #discussion-alert-message,
+            .discussion-alert-wrapper button {
+                font-size: 16px;
             }
         }
 
