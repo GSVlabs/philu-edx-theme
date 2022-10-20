@@ -14,6 +14,10 @@ Change Log
 [Unreleased]
 ************
 
+[Fix] - 2022-10-20
+~~~~~~~~~~~~~~~~~~
+* Fixed styles for Submit Your Response button in ORA in CMS (RGOeX-1824)
+
 [Fix] - 2022-09-30
 ~~~~~~~~~~~~~~~~~~
 * re-fixed discussion-alert when it's appear in mfe when forum is stopped, for staff and regular user  (RGOeX-1845)

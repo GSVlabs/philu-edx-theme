@@ -246,6 +246,10 @@
     .list--actions .action--submit,
     .openassessment_student_info_form .action--submit-username {
         @include flat($base-color);
+
+        font-size: 14px;
+        padding: 10px 40px;
+        font-weight: 600;
     }
 
     .action--submit,
