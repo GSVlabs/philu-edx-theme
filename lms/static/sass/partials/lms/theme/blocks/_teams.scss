@@ -1,8 +1,4 @@
 .view-teams.view-in-course {
-    a:visited:not(:hover):not(:focus) {
-        color: $base-color;
-    }
-
     .page-content-nav .nav-item:hover {
         text-shadow: none;
     }
@@ -107,6 +103,7 @@
         justify-content: flex-end;
 
         .action-search {
+            height: 35px;
             padding: 6px 10px;
         }
     }

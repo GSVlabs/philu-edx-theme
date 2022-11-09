@@ -14,6 +14,10 @@ Change Log
 [Unreleased]
 ************
 
+[Fix] - 2022-11-09
+~~~~~~~~~~~~~~~~~~
+* Fixed colors of the non-active tabs link on the Teams page (RGOeX-24673)
+
 [Fix] - 2022-10-20
 ~~~~~~~~~~~~~~~~~~
 * Fixed styles for Submit Your Response button in ORA in CMS (RGOeX-1824)
