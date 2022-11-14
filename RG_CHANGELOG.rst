@@ -14,6 +14,10 @@ Change Log
 [Unreleased]
 ************
 
+[Fix] - 2022-11-11
+~~~~~~~~~~~~~~~~~~
+* Fixed color of the support link in the deletion email (RGOeX-24674)
+
 [Fix] - 2022-11-09
 ~~~~~~~~~~~~~~~~~~
 * Fixed colors of the non-active tabs link on the Teams page (RGOeX-24673)
