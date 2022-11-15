@@ -1,4 +1,47 @@
 .view-instructordash {
+    .instructor-dashboard-wrapper-2 .customBrowseBtn {
+        @include media-breakpoint-up(sm) {
+            margin-right: 6px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            width: 100%;
+        }
+
+        .enhanced-input-file {
+            width: 100%;
+        }
+
+        .file-browse {
+            margin: 0;
+
+            .browse {
+                margin: 0;
+                height: 30px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+            }
+
+            .file_field {
+                position: relative;
+                left: 0;
+                width: 100%;
+                padding: 3px 12px;
+                height: 30px;
+
+                @include media-breakpoint-down(xs) {
+                    padding-right: 80px;
+                }
+
+                &::file-selector-button { /* stylelint-disable-line */
+                    display: none;
+                }
+            }
+        }
+    }
+
     .instructor-dashboard-content-2 {
         padding: 20px;
         word-break: break-word;
