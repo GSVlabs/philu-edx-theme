@@ -14,6 +14,11 @@ Change Log
 [Unreleased]
 ************
 
+[Fix] - 2022-11-14
+~~~~~~~~~~~~~~~~~~
+* Fixed the markup issue for "Upload a CSV file" field (RGOeX-24683)
+  - This commit should be skipped when we start the sync process with the palm branch if the `master PR <https://github.com/openedx/edx-platform/pull/31288>`_ will be merged by then
+
 [Fix] - 2022-11-11
 ~~~~~~~~~~~~~~~~~~
 * Fixed color of the support link in the deletion email (RGOeX-24674)
