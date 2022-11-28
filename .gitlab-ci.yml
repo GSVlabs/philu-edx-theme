@@ -8,7 +8,7 @@ stylelint:
     image: pipelinecomponents/stylelint:0.9.0
     before_script:
         - apk add git
-        - git clone https://github.com/raccoongang/frontend.git
+        - git clone -b v13.0.0-rg1 https://github.com/raccoongang/frontend.git
         - mv frontend/.stylelintrc .
     script:
         - stylelint '**/*.scss' --config .stylelintrc
