@@ -72,7 +72,7 @@
         overflow: hidden;
     }
 
-    .bookmark-button:not(:hover):not(:focus):not(:active) {
+    .bookmark-button:not(:hover, :focus, :active) {
         color: $base-color;
     }
 
@@ -102,7 +102,7 @@
 
         #headerDiv,
         #contentDiv {
-            @include clearfix();
+            @include clearfix;
 
             max-width: 100%;
         }
@@ -335,7 +335,7 @@
     .content-wrapper &,
     .view-progress #course-info-progress & {
         @include media-breakpoint-down(sm) {
-            @include clearfix();
+            @include clearfix;
 
             display: block;
             margin-bottom: 5px;
@@ -501,7 +501,6 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
                 width: 16px;
                 height: 16px;
                 background-color: $base-color;
-                -webkit-mask-image: url("#{$static-path}/images/rotate-right-solid.svg");
                 mask-image: url("#{$static-path}/images/rotate-right-solid.svg");
                 position: absolute;
                 left: 50%;
@@ -531,7 +530,6 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
                         width: 16px;
                         height: 16px;
                         background-color: $base-color;
-                        -webkit-mask-image: url("#{$static-path}/images/circle-down-solid.svg");
                         mask-image: url("#{$static-path}/images/circle-down-solid.svg");
                         position: absolute;
                         left: 0;

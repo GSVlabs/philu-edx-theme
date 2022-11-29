@@ -16,8 +16,8 @@ div#root.SFE {
             border-color: $base-color;
         }
 
-        &:not(:disabled):not(.disabled).active,
-        &:not(:disabled):not(.disabled):active {
+        &:not(:disabled, .disabled).active,
+        &:not(:disabled, .disabled):active {
             background-color: $base-color-hover;
             border-color: $base-color-hover;
         }

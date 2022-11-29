@@ -415,7 +415,7 @@
         }
 
         .search-info {
-            @include clearfix();
+            @include clearfix;
 
             padding-bottom: 0;
         }

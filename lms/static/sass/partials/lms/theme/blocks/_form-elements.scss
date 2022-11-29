@@ -1,7 +1,5 @@
-select:not(.forum-nav-filter-main-control):not(.forum-nav-sort-control):not(.forum-nav-filter-cohort-control),
+select:not(.forum-nav-filter-main-control, .forum-nav-sort-control, .forum-nav-filter-cohort-control),
 .forum-new-post-form .post-field .field-label .field-input select.post-topic {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     box-shadow: none;
     border-radius: 0;

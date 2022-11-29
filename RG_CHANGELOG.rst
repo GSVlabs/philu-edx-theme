@@ -9,6 +9,10 @@ and this project adheres to customized Semantic Versioning e.g.: `olive-rg.1`
 [Unreleased]
 ************
 
+[Feature] - 2022-11-25
+~~~~~~~~~~~~~~~~~~~~~~
+* Changed stylelint version to 14 (MC-31)
+
 Added:
 ======
 * Olive legacy theme (RGOeX-24496)

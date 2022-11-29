@@ -20,7 +20,7 @@
     }
 
     .highlighted-courses {
-        @include clearfix();
+        @include clearfix;
 
         padding-top: 45px;
         margin-bottom: 20px;

@@ -137,12 +137,7 @@ $slick-opacity-not-active: .25 !default;
     display: block;
     box-sizing: border-box;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
-    -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 
@@ -174,7 +169,7 @@ $slick-opacity-not-active: .25 !default;
 }
 
 .slick-track {
-    @include clearfix();
+    @include clearfix;
 
     position: relative;
     left: 0;

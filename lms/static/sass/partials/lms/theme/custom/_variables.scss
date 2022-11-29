@@ -9,7 +9,7 @@ $certificate-logo-height: $header-logo-height;
 $header-logo-offset-top: 0;
 
 // fonts
-$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  // base font family
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  // base font family
 $font-family-serif: $font-family-sans-serif;
 $georgia: $font-family-sans-serif;
 
@@ -70,6 +70,6 @@ $courseware-border-bottom-color: lighten($base-color, 21%);      // border-color
 $button-archive-color: #eee;                                   // base common `grey` variable
 $body-bg: #f5f5f5;                                             // body background color
 
-//xblocks
+// xblocks
 $xblock-video-light: #cb598d;
 $xblock-video-dark: #8e3e63;
