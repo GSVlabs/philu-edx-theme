@@ -163,7 +163,7 @@ header.global-header {
                         }
                     }
 
-                    &:hover:not([role="menuitem"]):not(.btn) {
+                    &:hover:not([role="menuitem"], .btn) {
                         color: $header-nav-link-color-hover;
                     }
 
@@ -224,7 +224,7 @@ header.global-header {
         .mobile-nav-link a {
             box-sizing: border-box;
 
-            &:not(:hover):not(:focus) {
+            &:not(:hover, :focus) {
                 color: $link-color;
             }
 
@@ -327,7 +327,7 @@ header.global-header {
     text-align: center;
     position: relative;
     min-height: 425px;
-    margin: -20px -20px 0 -20px;
+    margin: -20px -20px 0;
     width: auto;
 
     @media (min-width: 1920px) {
@@ -360,7 +360,7 @@ header.global-header {
         }
 
         .course-search {
-            @include clearfix();
+            @include clearfix;
 
             max-width: 584px;
             position: relative;

@@ -573,7 +573,7 @@
             margin: 0 !important;
             height: auto !important;
 
-            *:not(.mce-close):not(.mce-i-checkbox) {
+            *:not(.mce-close, .mce-i-checkbox) {
                 position: static;
                 height: auto !important;
                 width: auto !important;

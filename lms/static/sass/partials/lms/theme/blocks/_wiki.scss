@@ -46,7 +46,7 @@ body.view-wiki {
             .btn {
                 padding: 7px 18px !important;
 
-                &:not(.btn-primary):not(.btn-danger):not(.paragon__btn):focus {
+                &:not(.btn-primary, .btn-danger, .paragon__btn):focus {
                     color: $base-color;
                 }
             }
@@ -60,7 +60,7 @@ body.view-wiki {
                 background: none;
                 padding: 8px 15px;
 
-                &:not(:disabled):not(.paragon__disabled) {
+                &:not(:disabled, .paragon__disabled) {
                     &:focus,
                     &:active {
                         box-shadow: none;
@@ -83,7 +83,7 @@ body.view-wiki {
                 height: auto;
 
                 @include only-for-IE {
-                    @include clearfix();
+                    @include clearfix;
 
                     display: block;
                 }
