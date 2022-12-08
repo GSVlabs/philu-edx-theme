@@ -9,6 +9,10 @@ and this project adheres to customized Semantic Versioning e.g.: `olive-rg.1`
 [Unreleased]
 ************
 
+[Fix] - 2022-12-08
+~~~~~~~~~~~~~~~~~~~~~~
+* Fix footer social icons size (RGOeX-24792)
+
 [Feature] - 2022-11-25
 ~~~~~~~~~~~~~~~~~~~~~~
 * Changed stylelint version to 14 (MC-31)
