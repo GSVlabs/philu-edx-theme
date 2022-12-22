@@ -1,0 +1,64 @@
+.view-instructor_analytics {
+    .instructor-dashboard-content-2 .instructor-nav .nav-item .btn-link.active-section,
+    input[type="checkbox"]:checked + label .icon,
+    input[type="checkbox"]:checked + .label-text .icon,
+    .analytics-title.email-toggle-title {
+        color: $base-color;
+    }
+
+    .daterangepicker {
+        td {
+            &.active,
+            &.active:hover {
+                background: $base-color !important;
+            }
+
+            &.in-range {
+                background: rgba($base-color, .8) !important;
+            }
+        }
+
+        .calendar-table th {
+            &.next:before,
+            &.prev:before {
+                background: $base-color;
+            }
+        }
+    }
+
+    .enrollment-toggle-btns__label input[type="radio"] + .label-text:after {
+        background-color: $base-color;
+    }
+
+    #activity-unit-visits-stats-plot .highcharts-axis-line {
+        stroke: $base-color;
+    }
+
+    .problem-emails-list .problem-emails-span,
+    .subsection-emails-list .subsection-emails-span {
+        .emails-list-button:hover {
+            color: darken($base-color, 20%);
+        }
+    }
+
+    .cohort-email-wrapper {
+        border-color: $base-color;
+    }
+
+    .MuiButton-outlinedPrimary {
+        color: $base-color;
+        border-color: $base-color;
+
+        &:hover {
+            border-color: darken($base-color, 20%);
+        }
+    }
+
+    .MuiButton-containedPrimary {
+        background: $base-color;
+
+        &:hover {
+            background: darken($base-color, 20%);
+        }
+    }
+}
