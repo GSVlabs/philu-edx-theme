@@ -14,6 +14,7 @@ Added:
 * Olive legacy theme (RGOeX-24496)
 * Changed stylelint version to 14 (MC-31)
 * Apply theme colors to RG Analytics (RGA-507)
+* Charts styles corrections (RGA-583)
 
 Fixes:
 ======

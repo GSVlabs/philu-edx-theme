@@ -6,15 +6,26 @@
         color: $base-color;
     }
 
+    .js-datepicker-dropdown .date-range-picker-holder .js-date-cancel-btn:not(:hover) {
+        background: none;
+        color: $base-color !important;
+    }
+
     .daterangepicker {
         td {
             &.active,
             &.active:hover {
                 background: $base-color !important;
+                text-shadow: none;
             }
 
             &.in-range {
-                background: rgba($base-color, .8) !important;
+                background: rgba($base-color, .4) !important;
+            }
+
+            &.in-range.start-date,
+            &.in-range.end-date {
+                background: $base-color !important;
             }
         }
 
@@ -26,12 +37,18 @@
         }
     }
 
-    .enrollment-toggle-btns__label input[type="radio"] + .label-text:after {
-        background-color: $base-color;
+    .enrollment-toggle-btns__label input[type="radio"] {
+        &:checked + .label-text:before {
+            border-color: $base-color;
+        }
+
+        & + .label-text:after {
+            background-color: $base-color;
+        }
     }
 
     #activity-unit-visits-stats-plot .highcharts-axis-line {
-        stroke: $base-color;
+        stroke: #313131;
     }
 
     .problem-emails-list .problem-emails-span,
@@ -60,5 +77,9 @@
         &:hover {
             background: darken($base-color, 20%);
         }
+    }
+
+    .page-control-scope .page-control-scope-item:hover:not(.MuiButton-containedPrimary) {
+        background: rgba($base-color, .1);
     }
 }
