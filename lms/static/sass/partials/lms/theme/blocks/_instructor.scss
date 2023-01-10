@@ -86,7 +86,7 @@
 
         .btn-blue,
         input[type="button"],
-        button:not(.btn-link) {
+        button:not(.btn-link, .tox-tbtn) {
             margin: 10px 0;
         }
 
@@ -97,27 +97,6 @@
             &:focus {
                 color: $base-color;
                 text-decoration: none !important;
-            }
-        }
-
-        .mce-btn {
-            border-radius: 3px;
-
-            button:not(:disabled) {
-                margin: 0;
-                border: none;
-                border-radius: 3px;
-
-                &:hover {
-                    box-shadow: inset 0 1px 0 0 #fefefe;
-                    background: #e4e4e4 linear-gradient(#e4e4e4, #d1c9c9);
-                    text-shadow: none;
-                    color: #626b73;
-                }
-
-                &:focus {
-                    box-shadow: inset 0 0 8px 4px #cac2c2, inset 0 0 8px 4px #cac2c2;
-                }
             }
         }
 
@@ -561,173 +540,55 @@
         }
     }
 
-    .mce-window.mce-in {
-        @include media-breakpoint-down(sm) {
-            width: 460px !important;
-            max-width: calc(100% - 20px);
-            box-sizing: border-box;
-            left: 50% !important;
-            top: 50% !important;
-            position: fixed;
-            transform: translate(-50%, -50%);
-            margin: 0 !important;
-            height: auto !important;
-
-            *:not(.mce-close, .mce-i-checkbox) {
-                position: static;
-                height: auto !important;
-                width: auto !important;
-            }
-
-            .mce-window-head {
-                position: relative !important;
-
-                .mce-close {
-                    border: none;
-                }
-            }
-
-            .mce-abs-layout,
-            .mce-foot {
-                max-width: 100%;
-                box-sizing: border-box;
-            }
-
-            .mce-foot {
-                display: flex;
-                justify-content: flex-end;
-
-                .mce-abs-layout {
-                    height: auto !important;
-                }
-            }
-
-            .mce-formitem {
-                margin-bottom: 10px;
-                padding: 0 10px;
-
-                & + .mce-last.mce-abs-layout-item .mce-formitem.mce-first {
-                    margin-top: 0;
-                }
-
-                &.mce-first {
-                    margin-top: 10px;
-                }
-
-                .mce-label.mce-first {
-                    display: block;
-                    margin-bottom: 5px;
-                }
-
-                .mce-checkbox {
-                    margin-top: 5px;
-                }
-
-                .mce-combobox {
-                    display: block;
-                    width: 100% !important;
-                }
-
-                .mce-textbox {
-                    font-size: 14px;
-                    padding: 5px 10px;
-                    display: inline-block;
-                    vertical-align: middle;
-
-                    &:not([size="3"]) {
-                        width: 100% !important;
-                        box-sizing: border-box;
-                    }
-
-                    & + .mce-label {
-                        margin: 0 5px;
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
-                }
-
-                .mce-listbox {
-                    width: 100% !important;
-
-                    button {
-                        width: 100% !important;
-                        border: 1px solid #c5c5c5 !important;
-                        position: relative !important;
-
-                        .mce-caret {
-                            position: absolute !important;
-                        }
-                    }
-                }
-            }
-        }
-
-        .mce-window-head .mce-close {
-            padding: 1px 4px;
-            border-color: transparent;
-        }
-
-        .mce-foot {
-            .mce-abs-layout {
-                height: auto !important;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                padding: 10px;
-                box-sizing: border-box;
-            }
-        }
-
-        .mce-btn:not(.mce-listbox) {
-            border: none !important;
-            background: none !important;
-            height: auto !important;
-            position: static !important;
-            display: inline-block;
-            vertical-align: middle;
-
-            & + .mce-btn {
-                margin-left: 5px;
-            }
-
-            &.mce-primary button {
-                width: 100% !important;
-                border: 1px solid $base-color !important;
-                color: $base-color;
-
-                &:hover,
-                &:focus {
-                    color: $white;
-                }
-            }
-        }
-
-        .mce-primary + .mce-last button {
-            border: 1px solid transparent;
-        }
-
-        .mce-listbox button {
-            border: 1px solid #c5c5c5 !important;
-            box-shadow: none;
-        }
-    }
-
-    .mce-floatpanel.mce-fixed {
-        @include media-breakpoint-down(sm) {
-            width: 440px !important;
-            max-width: calc(100% - 40px);
-            box-sizing: border-box;
-            left: 50% !important;
-            transform: translateX(-50%);
-        }
-    }
-
     .slick-header-column.ui-state-default {
         height: auto;
     }
 
     .modal-header {
         color: $base-color !important;
+    }
+
+    .tox {
+        .tox-tbtn:hover {
+            text-shadow: none;
+        }
+
+        .tox-dialog__body-nav-item:focus {
+            background: rgba($base-color, .1);
+        }
+
+        .tox-dialog__body-nav-item--active {
+            border-bottom-color: $base-color;
+            color: $base-color;
+        }
+
+        .tox-listboxfield .tox-listbox--select:focus,
+        .tox-textarea:focus,
+        .tox-textfield:focus {
+            border-color: $base-color;
+        }
+
+        .tox-listboxfield .tox-listbox--select:hover {
+            background: #f0f0f0;
+            text-shadow: none;
+        }
+
+        .tox-dialog__footer-end .tox-button {
+            &:hover {
+                text-shadow: none;
+            }
+
+            &:not(:disabled, .tox-button--naked, .tox-button--secondary) {
+                background-color: $base-color;
+                border-color: $base-color;
+
+                &:hover,
+                &:focus {
+                    background-color: $m-blue-d3;
+                    border-color: $m-blue-d3;
+                }
+            }
+        }
     }
 }
 
