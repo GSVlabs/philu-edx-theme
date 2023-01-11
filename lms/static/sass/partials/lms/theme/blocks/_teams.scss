@@ -3,6 +3,14 @@
         text-shadow: none;
     }
 
+    .teams-header .breadcrumbs .nav-item:not(:hover, :focus) {
+        color: $base-color;
+    }
+
+    .forum-nav-thread .forum-nav-thread-link:hover {
+        color: $link-hover;
+    }
+
     .action-primary,
     .action-cancel,
     .action-edit-team,
@@ -22,6 +30,7 @@
 
     .action-edit-team {
         padding: 10px 20px;
+        text-shadow: none;
 
         &:hover {
             background: $uxpl-blue-hover-active !important;
