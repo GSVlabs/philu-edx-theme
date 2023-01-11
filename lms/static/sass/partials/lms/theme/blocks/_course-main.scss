@@ -501,6 +501,7 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
                 width: 16px;
                 height: 16px;
                 background-color: $base-color;
+                -webkit-mask-image: url("#{$static-path}/images/rotate-right-solid.svg"); // stylelint-disable-line
                 mask-image: url("#{$static-path}/images/rotate-right-solid.svg");
                 position: absolute;
                 left: 50%;
@@ -530,6 +531,7 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
                         width: 16px;
                         height: 16px;
                         background-color: $base-color;
+                        -webkit-mask-image: url("#{$static-path}/images/circle-down-solid.svg"); // stylelint-disable-line
                         mask-image: url("#{$static-path}/images/circle-down-solid.svg");
                         position: absolute;
                         left: 0;
