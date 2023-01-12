@@ -21,6 +21,7 @@ Fixes:
 ======
 * Fix footer social icons size (RGOeX-24792)
 * Apply theme color to the buttons on team pages (RGOeX-24791)
+* Fix button icons in the scrom xblock (RGOeX-24872)
 
 
 [nutmeg-rg.1] 2022-09-30 (Nutmeg RG release)
