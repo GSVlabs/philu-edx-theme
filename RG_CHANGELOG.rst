@@ -16,6 +16,7 @@ Added:
 * Apply theme colors to RG Analytics (RGA-507)
 * Charts styles corrections (RGA-583)
 * Apply theme colors to the tinymce editor (RGOeX-25024)
+* Remove unnecessary text-shadow on hover from tiny-mce button inside ORA (RGOeX-25111)
 
 Fixes:
 ======

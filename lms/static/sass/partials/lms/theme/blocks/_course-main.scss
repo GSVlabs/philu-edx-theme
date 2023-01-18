@@ -458,6 +458,10 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
     div.submission__answer__part__text__value:empty {
         display: none;
     }
+
+    .tox-tinymce .tox-tbtn:hover {
+        text-shadow: none;
+    }
 }
 
 .course-wrapper .course-content .xblock {
