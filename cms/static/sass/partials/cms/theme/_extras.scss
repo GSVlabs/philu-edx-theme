@@ -312,3 +312,17 @@
         display: none;
     }
 }
+
+// problems
+
+.xmodule_display.xmodule_ProblemBlock div.problem .action .problem-action-btn {
+    max-width: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: lighten($base-color, 10%);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
