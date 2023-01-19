@@ -19,6 +19,7 @@ Added:
 
 Fixes:
 ======
+* Fix the Course Card Image is absent on FB post after sharing by user (RGOeX-24439)
 * Fix footer social icons size (RGOeX-24792)
 * Apply theme color to the buttons on team pages (RGOeX-24791)
 * Fix button icons in the scrom xblock (RGOeX-24872)
