@@ -280,6 +280,12 @@
                 }
             }
         }
+
+        .problem-hint .notification-hint .notification-btn-wrapper button:hover {
+            background: none;
+            color: $link-hover;
+            text-shadow: none;
+        }
     }
 
     &.xmodule_SequenceModule .sequence-nav-button {
