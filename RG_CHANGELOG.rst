@@ -21,6 +21,7 @@ Added:
 
 Fixes:
 ======
+* Fix translations for Twitter (RGOeX-25134)
 * Fix the Course Card Image is absent on FB post after sharing by user (RGOeX-24439)
 * Fix footer social icons size (RGOeX-24792)
 * Apply theme color to the buttons on team pages (RGOeX-24791)
