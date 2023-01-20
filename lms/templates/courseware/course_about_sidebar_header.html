@@ -23,10 +23,10 @@ from six import text_type
 
         ## Translators: This text will be automatically posted to the student's
         ## Twitter account. {url} should appear at the end of the text.
-        tweet_text = _("I just enrolled in {number} {title} through {account}: {url}").format(
+        tweet_text = _("I just enrolled in {number} {title} through {platform} {url}").format(
             number=course.number,
             title=course.display_name_with_default,
-            account=settings.PLATFORM_TWITTER_ACCOUNT or platform_name,
+            platform=settings.PLATFORM_TWITTER_ACCOUNT or platform_name,
             url=u"{protocol}://{domain}{path}".format(
                 protocol=site_protocol,
                 domain=site_domain,
