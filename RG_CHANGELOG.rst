@@ -18,6 +18,7 @@ Added:
 * Apply theme colors to the tinymce editor (RGOeX-25024)
 * Cosmetic enhancement for auxiliary options in common problems (RGOeX-25047)
 * Remove unnecessary text-shadow on hover from tiny-mce button inside ORA (RGOeX-25111)
+* Wiki markup enhancements (RGOeX-25150)
 
 Fixes:
 ======

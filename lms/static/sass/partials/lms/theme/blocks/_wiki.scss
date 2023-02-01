@@ -102,6 +102,23 @@ body.view-wiki {
                 }
             }
 
+            .nav-tabs {
+                a:hover,
+                a:focus {
+                    font-weight: 400;
+                }
+
+                li.active a {
+                    &:hover {
+                        font-weight: 700;
+                    }
+
+                    .icon {
+                        padding-right: 1px;
+                    }
+                }
+            }
+
             .article-functions {
                 padding: 20px;
 
@@ -111,6 +128,16 @@ body.view-wiki {
 
                 @include media-breakpoint-down(sm) {
                     padding: 20px 20px 10px;
+                }
+
+                .see-children a {
+                    border-left: 1px solid $link-color;
+                    border-radius: 0;
+
+                    &:hover,
+                    &:focus {
+                        font-weight: 400;
+                    }
                 }
             }
 
@@ -236,6 +263,36 @@ body.view-wiki {
                         width: 100%;
                     }
                 }
+            }
+
+            .table.table-striped a {
+                &:hover,
+                &:focus {
+                    font-weight: 400;
+                }
+            }
+
+            #div_id_confirm {
+                margin: 40px 0 20px;
+            }
+
+            .control-group#div_id_purge .controls {
+                display: flex;
+                align-items: flex-start;
+
+                #id_purge {
+                    margin: 4px 10px 0 0;
+                }
+            }
+        }
+
+        #wiki-content {
+            p.lead {
+                margin: 0 20px;
+            }
+
+            .row-fluid {
+                padding: 20px;
             }
         }
     }
