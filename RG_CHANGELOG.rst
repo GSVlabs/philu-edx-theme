@@ -19,6 +19,7 @@ Added:
 * Cosmetic enhancement for auxiliary options in common problems (RGOeX-25047)
 * Remove unnecessary text-shadow on hover from tiny-mce button inside ORA (RGOeX-25111)
 * Wiki markup enhancements (RGOeX-25150)
+* ORA branding enhancement (RGOeX-25040)
 
 Fixes:
 ======

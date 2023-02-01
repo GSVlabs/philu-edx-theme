@@ -313,6 +313,69 @@
     }
 }
 
+.openassessment_modal_window #openassessment-editor {
+    #oa_rubric_editor_wrapper .openassessment_criterion .openassessment_criterion_add_option,
+    .openassessment_container_add_button:not(.is--disabled),
+    #student_training_settings_editor .openassessment_add_training_example {
+        color: $base-color;
+        border-color: $base-color;
+
+        &:hover {
+            background: $base-color;
+            color: $white;
+        }
+    }
+
+    .openassessment_assessment_module_settings_editor {
+        &:hover {
+            border-color: $base-color;
+
+            .drag-handle {
+                background: $base-color !important;
+                border-color: $base-color;
+            }
+        }
+
+        .openassessment_view_details a {
+            color: $base-color;
+        }
+    }
+}
+
+// ui date and time pickers
+
+body {
+    .ui-timepicker-list li {
+        &:hover,
+        &.ui-timepicker-selected {
+            background: $base-color;
+            color: $white;
+        }
+    }
+
+    .ui-datepicker {
+        .ui-state-default.ui-state-hover {
+            background: lighten($base-color, 20%);
+            border-color: lighten($base-color, 20%);
+        }
+
+        .ui-state-active {
+            background: $base-color !important;
+            border-color: $base-color !important;
+        }
+
+        .ui-datepicker-next-hover {
+            right: 2px;
+            top: 2px;
+        }
+
+        .ui-datepicker-prev-hover {
+            left: 2px;
+            top: 2px;
+        }
+    }
+}
+
 // problems
 
 .xmodule_display.xmodule_ProblemBlock div.problem .action .problem-action-btn {
