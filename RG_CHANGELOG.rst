@@ -20,6 +20,7 @@ Added:
 * Remove unnecessary text-shadow on hover from tiny-mce button inside ORA (RGOeX-25111)
 * Wiki markup enhancements (RGOeX-25150)
 * ORA branding enhancement (RGOeX-25040)
+* Remove extra space after notification message for certificate exception generation (RGOeX-25142)
 
 Fixes:
 ======
