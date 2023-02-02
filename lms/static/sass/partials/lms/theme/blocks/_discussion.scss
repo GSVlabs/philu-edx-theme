@@ -57,6 +57,11 @@
             .forum-search {
                 margin-bottom: 5px;
             }
+
+            .forum-search .search-input:focus {
+                box-shadow: none;
+                border-color: $base-color;
+            }
         }
     }
 
@@ -384,6 +389,10 @@
     .discussion-comment {
         word-break: break-word;
         padding-right: 30px;
+    }
+
+    .forum-nav-thread-list .forum-nav-thread-link {
+        outline: none;
     }
 }
 
