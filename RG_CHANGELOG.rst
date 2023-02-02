@@ -18,6 +18,7 @@ Added:
 * Apply theme colors to the tinymce editor (RGOeX-25024)
 * Cosmetic enhancement for auxiliary options in common problems (RGOeX-25047)
 * Remove unnecessary text-shadow on hover from tiny-mce button inside ORA (RGOeX-25111)
+* Discussion - Remove system outline around first selected item in the topics list and fix search input focus border (RGOeX-25157)
 * Fix units hover tooltips in studio which are overlapping by other page content (RGOeX-25039)
     * This fix should be removed from theme when this `master PR <https://github.com/openedx/edx-platform/pull/31671>`_ will be merged
 * Wiki markup enhancements (RGOeX-25150)
