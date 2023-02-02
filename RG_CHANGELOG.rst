@@ -18,6 +18,8 @@ Added:
 * Apply theme colors to the tinymce editor (RGOeX-25024)
 * Cosmetic enhancement for auxiliary options in common problems (RGOeX-25047)
 * Remove unnecessary text-shadow on hover from tiny-mce button inside ORA (RGOeX-25111)
+* Fix units hover tooltips in studio which are overlapping by other page content (RGOeX-25039)
+    * This fix should be removed from theme when this `master PR <https://github.com/openedx/edx-platform/pull/31671>`_ will be merged
 * Wiki markup enhancements (RGOeX-25150)
 * ORA branding enhancement (RGOeX-25040)
 * Remove extra space after notification message for certificate exception generation (RGOeX-25142)
