@@ -41,6 +41,37 @@
     }
 }
 
+// Brand color for Tiny MCE editor
+
+.tox {
+    .tox-dialog {
+        .tox-textarea,
+        .tox-textfield,
+        .tox-listboxfield .tox-listbox--select {
+            &:focus {
+                border-color: $base-color;
+            }
+        }
+
+        .tox-button:not(.tox-button--secondary, .tox-button--icon, .tox-button--naked) {
+            background: $base-color;
+            border-color: $base-color;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background: $base-color-hover;
+                border-color: $base-color-hover;
+            }
+        }
+    }
+
+    .tox-insert-table-picker .tox-insert-table-picker__selected {
+        border-color: rgba($base-color, .5);
+        background: rgba($base-color, .1);
+    }
+}
+
 // Modal Windows on Visual Editor
 
 .mce-textbox {
