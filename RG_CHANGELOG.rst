@@ -28,6 +28,8 @@ Added:
 
 Fixes:
 ======
+* Fixed the markup issue for "Upload a CSV file" field (RGOeX-24683)
+  * This commit should be skipped when we start the sync process with the palm branch if the `master PR <https://github.com/openedx/edx-platform/pull/31288>`_ will be merged by then
 * Fix translations for Twitter (RGOeX-25134)
 * Fix the Course Card Image is absent on FB post after sharing by user (RGOeX-24439)
 * Fix footer social icons size (RGOeX-24792)
