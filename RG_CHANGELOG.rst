@@ -28,6 +28,7 @@ Added:
 
 Fixes:
 ======
+* Added an upgrade reminder email template to fix the broken image (RGOeX-24456)
 * Fixed the markup issue for "Upload a CSV file" field (RGOeX-24683)
   * This commit should be skipped when we start the sync process with the palm branch if the `master PR <https://github.com/openedx/edx-platform/pull/31288>`_ will be merged by then
 * Fix translations for Twitter (RGOeX-25134)
