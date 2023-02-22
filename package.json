@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "prepare": "husky install",
     "backstop-test-general": "backstop test backstop.json",
     "backstop-test-course": "backstop test backstop-course.json",
     "backstop-approve": "backstop approve",
@@ -14,5 +15,10 @@
     "eslint": "^4.19.1",
     "eslint-config-edx": "^4.0.4",
     "stylelint": "^14.15.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.1",
+    "@commitlint/config-conventional": "^17.4.0",
+    "husky": "^8.0.3"
   }
 }
