@@ -25,6 +25,7 @@ Added:
 * ORA branding enhancement (RGOeX-25040)
 * Remove extra space after notification message for certificate exception generation (RGOeX-25142)
 * Add base color for course overview Tiny MCE modal window in studio (RGOeX-25253)
+* Add pre-commit-hooks (CTO-25)
 
 Fixes:
 ======

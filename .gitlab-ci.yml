@@ -9,7 +9,7 @@ stylelint:
     before_script:
         - apk add git
         - git clone -b v14.15.0-rg1 https://github.com/raccoongang/frontend.git
-        - npm i stylelint-config-standard-scss
+        - npm i stylelint-config-standard-scss@v6.1.0
         - mv frontend/.stylelintrc .
     script:
         - stylelint '**/*.scss' --config .stylelintrc
