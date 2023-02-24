@@ -190,27 +190,18 @@
 
         .number-circle {
             padding-top: 0;
-            line-height: 22px;
+            font: 700 14px/22px $font-family-sans-serif !important;
             margin-bottom: 1px;
-
-            @include only-for-SAFARI {
-                font-size: 14px;
-            }
         }
 
         .number-status {
-            @include only-for-SAFARI {
-                font: 400 15px/18px $font-family-sans-serif !important;
-            }
+            font: 400 15px/18px $font-family-sans-serif !important;
         }
     }
 
     .hd-3 {
         word-break: break-word;
-
-        @include only-for-SAFARI {
-            font: 400 1.5rem/1.15 $font-family-sans-serif !important;
-        }
+        font: 400 1.5rem/1.15 $font-family-sans-serif !important;
     }
 
     .progress-container .progress-bar {
