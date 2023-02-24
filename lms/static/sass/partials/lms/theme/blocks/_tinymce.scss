@@ -1,0 +1,51 @@
+.tox {
+    .tox-dialog {
+        .tox-textarea,
+        .tox-textfield,
+        .tox-listboxfield .tox-listbox--select {
+            &:focus {
+                border-color: $base-color;
+            }
+        }
+
+        button:hover {
+            text-shadow: none;
+            background-image: none;
+        }
+
+        .tox-button {
+            &:hover {
+                text-shadow: none;
+                background-image: none;
+            }
+
+            &:not(.tox-button--secondary, .tox-button--icon, .tox-button--naked) {
+                background: $base-color;
+                border-color: $base-color;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background: darken($base-color, 6%);
+                    border-color: darken($base-color, 6%);
+                }
+            }
+        }
+    }
+
+    .tox-insert-table-picker .tox-insert-table-picker__selected {
+        border-color: rgba($base-color, .5);
+        background: rgba($base-color, .1);
+    }
+
+    .tox-dialog__body-nav {
+        .tox-dialog__body-nav-item--active {
+            color: $base-color;
+            border-bottom-color: $base-color;
+        }
+
+        .tox-dialog__body-nav-item:focus {
+            background: rgba($base-color, .05);
+        }
+    }
+}
