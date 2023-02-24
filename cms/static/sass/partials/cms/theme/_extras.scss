@@ -70,6 +70,17 @@
         border-color: rgba($base-color, .5);
         background: rgba($base-color, .1);
     }
+
+    .tox-dialog__body-nav {
+        .tox-dialog__body-nav-item--active {
+            color: $base-color;
+            border-bottom-color: $base-color;
+        }
+
+        .tox-dialog__body-nav-item:focus {
+            background: rgba($base-color, .05);
+        }
+    }
 }
 
 // Modal Windows on Visual Editor
@@ -379,8 +390,8 @@ body {
     .ui-timepicker-list li {
         &:hover,
         &.ui-timepicker-selected {
-            background: $base-color;
-            color: $white;
+            background: $base-color !important;
+            color: $white !important;
         }
     }
 

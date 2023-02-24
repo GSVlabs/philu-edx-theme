@@ -26,6 +26,7 @@ Added:
 * Remove extra space after notification message for certificate exception generation (RGOeX-25142)
 * Add base color for course overview Tiny MCE modal window in studio (RGOeX-25253)
 * Add pre-commit-hooks (CTO-25)
+* Add base color for ORA Tiny MCE editor in LMS and CMS (RGOeX-25502, RGOeX-25486)
 
 Fixes:
 ======
