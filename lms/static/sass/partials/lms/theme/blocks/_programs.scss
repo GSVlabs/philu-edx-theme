@@ -241,3 +241,7 @@
         margin: 0 -15px;
     }
 }
+
+.program-detail-nav .program-detail-nav-list .nav-item .nav-link:focus:not(:focus-visible) {
+    outline: none;
+}
