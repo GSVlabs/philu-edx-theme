@@ -28,6 +28,7 @@ Added:
 * Add pre-commit-hooks (CTO-25)
 * Add base color for ORA Tiny MCE editor in LMS and CMS (RGOeX-25502, RGOeX-25486)
 * Add base color to unenrolled user email (RGOeX-25217)
+* Remove outline while mouse clicking on tabs in programs page (RGOeX-25534)
 
 Fixes:
 ======
