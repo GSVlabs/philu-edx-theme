@@ -1,0 +1,31 @@
+{% extends 'ace_common/edx_ace/common/base_body.html' %}
+
+{% load i18n %}
+{% load static %}
+{% block content %}
+{% with site_name='<a href="'|add:site_name|add:'" style="color: #556b2f;">'|safe|add:site_name|add:'</a>'|safe email_address='<a href="mailto:'|add:email_address|add:'" style="color: #556b2f;">'|safe|add:email_address|add:'</a>'|safe %}
+<table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+        <td>
+            <h1>
+                {% filter force_escape %}
+                {% blocktrans %}You have been unenrolled from {{ course_name }}{% endblocktrans %}
+                {% endfilter %}
+            </h1>
+
+            <p style="color: rgba(0,0,0,.75);">
+                {% filter force_escape %}
+                {% blocktrans %}You have been unenrolled from the course {{ course_name }} by a member of the course staff. Please disregard the invitation previously sent.{% endblocktrans %}
+                {% endfilter %}
+                <br />
+            </p>
+
+            <p style="color: rgba(0,0,0,.75);">
+                {% blocktrans %}This email was automatically sent from {{ site_name }} to {{ email_address }}{% endblocktrans %}
+                <br />
+            </p>
+        </td>
+    </tr>
+</table>
+{% endwith %}
+{% endblock %}
