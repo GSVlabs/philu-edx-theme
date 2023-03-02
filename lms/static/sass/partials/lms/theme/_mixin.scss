@@ -16,16 +16,6 @@
     @supports (-ms-ime-align:auto) { @content; }
 }
 
-// Media rules for Safari browsers only
-
-@mixin only-for-SAFARI {
-    @media not all and (min-resolution: .001dpcm) {
-        @supports (-webkit-appearance:none) {
-            @content;
-        }
-    }
-}
-
 // function for checking light color or not
 
 @function is-light($hex-color) {
