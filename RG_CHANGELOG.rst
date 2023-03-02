@@ -9,6 +9,10 @@ and this project adheres to customized Semantic Versioning e.g.: `olive-rg.1`
 [Unreleased]
 ************
 
+Changed:
+========
+* Configure the cookie policy banner cookie name and domain through the settings (RGOeX-25518)
+
 Added:
 ======
 * Olive legacy theme (RGOeX-24496)

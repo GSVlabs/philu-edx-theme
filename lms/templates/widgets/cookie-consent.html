@@ -28,6 +28,10 @@ window.addEventListener("load", function() {
         "dismiss": '<a aria-label="dismiss cookie message" id="dismiss" role=button tabindex="0" class="cc-btn cc-dismiss:focus">{{dismiss}}</a>',
     },
     "position": "bottom",
+    "cookie": {
+      "name": "${settings.COOKIE_POLICY_VIEWED_COOKIE_NAME}",
+      "domain": "${settings.COOKIE_POLICY_COOKIE_DOMAIN}"
+    },
     "static": "true"
   },
   function(popup) {
