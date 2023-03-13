@@ -8,11 +8,13 @@
 from django.urls import reverse
 from django.utils.translation import gettext as _
 from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
+from openedx.core.djangoapps.programs.models import ProgramsApiConfig
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 %>
 
 <%
   show_explore_courses = settings.FEATURES.get('COURSES_ARE_BROWSABLE')
+  show_program_listing = ProgramsApiConfig.is_enabled()
   self.real_user = getattr(user, 'real_user', user)
   enable_help_link = settings.FEATURES.get('ENABLE_HELP_LINK')
 

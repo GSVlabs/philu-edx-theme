@@ -46,6 +46,9 @@ Fixes:
 * Fix button icons in the scrom xblock (RGOeX-24872)
 * Font size fixes for Programs dashboad page in Safari (RGOeX-25541)
 
+Changed:
+========
+* Changed the dependency of displaying the Programs link based on the state of ProgramsApiConfig (RGOeX-25471)
 
 [nutmeg-rg.1] 2022-09-30 (Nutmeg RG release)
 ********************************************
