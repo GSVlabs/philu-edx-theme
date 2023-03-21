@@ -248,6 +248,59 @@
     }
 }
 
+// appsembler xblock-video
+
+.video-xblock-edit-menu-tab:hover {
+    background: $base-color !important;
+    color: $white !important;
+}
+
+.xblock-studio_view-video_xblock {
+    .accordion-btn {
+        border-color: $base-color;
+
+        &:hover {
+            background: rgba($base-color, .2);
+        }
+
+        &.active,
+        &.active:hover {
+            background: $base-color;
+        }
+    }
+
+    .accordion-panel.active {
+        border-color: $base-color;
+    }
+
+    .list-settings-buttons a,
+    .add-transcript,
+    .wrapper-comp-settings .file-uploader .xblock-edit-settings .upload-setting,
+    .wrapper-comp-settings .file-uploader .xblock-edit-settings .download-setting {
+        border: 1px solid $base-color;
+        color: $base-color;
+
+        &:hover {
+            background: $base-color;
+            color: $white;
+            border: 1px solid $base-color;
+        }
+    }
+
+    .default-transcripts-switch-input:checked + .default-transcripts-switch .default-transcripts-slider {
+        background: $base-color;
+    }
+
+    .wrapper-comp-settings .list-input.settings-list select:focus {
+        background: none;
+    }
+}
+
+.xblock-student_view-video_xblock .dropdown-content a:hover {
+    background-color: $base-color;
+    color: $white;
+}
+
 // fix image proportions in HTML xBlock
 
 .xmodule_display.xmodule_HtmlBlock img {

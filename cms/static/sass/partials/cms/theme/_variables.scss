@@ -14,3 +14,7 @@ $uxpl-blue-hover-active: $base-color-hover;
 $blue-l3: $base-color-hover;
 
 @import "edx-bootstrap/sass/open-edx/theme";
+
+:root {
+    --base-color: #{$base-color};
+}

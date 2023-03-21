@@ -7,6 +7,10 @@
 // @include media-breakpoint-up(lg) { color: pink;}        //  (min-width: 992px)
 // @include media-breakpoint-up(xl) { color: lime;}        //  (min-width: 1200px)
 
+:root {
+    --base-color: #{$base-color};
+}
+
 %container {
     max-width: 1230px;
     margin-left: auto;

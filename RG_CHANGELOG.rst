@@ -33,6 +33,8 @@ Added:
 * Add base color for ORA Tiny MCE editor in LMS and CMS (RGOeX-25502, RGOeX-25486)
 * Add base color to unenrolled user email (RGOeX-25217)
 * Remove outline while mouse clicking on tabs in programs page (RGOeX-25534)
+* Add base color to edit modal window [xblock-video] (RGOeX-25432)
+* Add base color for subtitles list and player control buttons [xblock-video] (RGOeX-25440)
 
 Fixes:
 ======
@@ -45,6 +47,8 @@ Fixes:
 * Apply theme color to the buttons on team pages (RGOeX-24791)
 * Fix button icons in the scrom xblock (RGOeX-24872)
 * Font size fixes for Programs dashboad page in Safari (RGOeX-25541)
+* Fix for download subtitles button under the video [xblock-video] (RGOeX-24475)
+* Fix transcript appearing and controls buttons positioning for Brightcove player [xblock-video] (RGOeX-25698)
 
 Changed:
 ========

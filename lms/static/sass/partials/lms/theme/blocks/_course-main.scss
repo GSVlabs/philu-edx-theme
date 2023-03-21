@@ -315,6 +315,13 @@
     }
 }
 
+// appsembler xblock-video
+
+.xblock-student_view-video_xblock .dropdown-content a:hover {
+    background-color: $base-color;
+    color: $white;
+}
+
 .section-update-message,
 .all-updates {
     word-break: break-word;
