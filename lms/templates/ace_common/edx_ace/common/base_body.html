@@ -92,18 +92,18 @@
                                   <tr>
                                     <td align="left" valign="top" style="color: #d23228;">
                                       {% if courses_url %}
-                                        <a href="{% with_link_tracking courses_url %}" target="_blank" style="font-size:15px;line-height:20px;text-decoration:underline;color:#556b2f;">
+                                        <a href="{% with_link_tracking courses_url %}" target="_blank" style="font-size:15px;line-height:20px;text-decoration:underline;color:#74901f;">
                                           {% trans "Courses" as tmsg %}{{ tmsg | force_escape }}
                                         </a>
                                         &nbsp; / &nbsp;
                                       {% endif %}
                                       {% if programs_url %}
-                                        <a href="{% with_link_tracking programs_url %}" target="_blank" style="font-size:15px;line-height:20px;text-decoration:underline;color:#556b2f;">
+                                        <a href="{% with_link_tracking programs_url %}" target="_blank" style="font-size:15px;line-height:20px;text-decoration:underline;color:#74901f;">
                                           {% trans "Programs" as tmsg %}{{ tmsg | force_escape }}
                                         </a>
                                         &nbsp; / &nbsp;
                                       {% endif %}
-                                      <a href="{% with_link_tracking dashboard_url %}" target="_blank" style="font-size:15px;line-height:20px;text-decoration:underline;color:#556b2f;">
+                                      <a href="{% with_link_tracking dashboard_url %}" target="_blank" style="font-size:15px;line-height:20px;text-decoration:underline;color:#74901f;">
                                         {% trans "My Account" as tmsg %}{{ tmsg | force_escape }}
                                       </a>
                                     </td>
@@ -218,7 +218,7 @@
           {% get_action_links channel omit_unsubscribe_link=omit_unsubscribe_link as action_links %}
           {% for action_link_url, action_link_text in action_links %}
             <p>
-              <a href="{{ action_link_url }}" style="color: #556b2f">
+              <a href="{{ action_link_url }}" style="color: #74901f;">
                 <font color="#005686"><b>{{ action_link_text }}</b></font>
               </a>
             </p>
@@ -231,7 +231,7 @@
           &copy; {% now "Y" %} {{ platform_name }}, {% trans "All rights reserved" as tmsg %}{{ tmsg | force_escape }}.<br/>
           <br/>
           {% trans "Our mailing address is:" as tmsg %}{{ tmsg | force_escape }}<br/>
-          <a style="color: #556b2f" href="mailto:{{ contact_mailing_address }}">{{ contact_mailing_address }}</a>
+          <a style="color: #74901f;" href="mailto:{{ contact_mailing_address }}">{{ contact_mailing_address }}</a>
         </td>
       </tr>
       {% if unsubscribe_url %}

@@ -4,10 +4,17 @@ RG Changelog
 All notable changes to this project will be documented in this file.
 
 The format is based on `Keep a Changelog <https://keepachangelog.com/en/1.0.0/>`_,
-and this project adheres to customized Semantic Versioning e.g.: `olive-rg.1`
+and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 
 [Unreleased]
 ************
+
+Added:
+======
+* Palm legacy theme (RGOeX-25775)
+
+[olive-rg.1] 2023-03-23 (Olive RG release)
+******************************************
 
 Changed:
 ========

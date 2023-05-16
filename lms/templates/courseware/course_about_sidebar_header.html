@@ -33,7 +33,7 @@ from six import text_type
                 path=reverse('about_course', args=[text_type(course.id)])
             )
         )
-        tweet_action = u"http://twitter.com/intent/tweet?text={tweet_text}".format(
+        tweet_action = u"https://twitter.com/intent/tweet?text={tweet_text}".format(
             tweet_text=quote(tweet_text.encode('UTF-8'))
         )
 
