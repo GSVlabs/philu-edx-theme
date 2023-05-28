@@ -11,6 +11,7 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 
 Added:
 ======
+* Added a CSS variable for the base color hover, which is needed for use in the feedback form (RGA-793)
 * Palm legacy theme (RGOeX-25775)
 
 [olive-rg.1] 2023-03-23 (Olive RG release)
