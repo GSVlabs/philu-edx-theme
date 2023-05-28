@@ -9,6 +9,7 @@
 
 :root {
     --base-color: #{$base-color};
+    --base-color-hover: #{darken($base-color, 10%)};
 }
 
 %container {
