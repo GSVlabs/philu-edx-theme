@@ -14,6 +14,10 @@ Added:
 * Added a CSS variable for the base color hover, which is needed for use in the feedback form (RGA-793)
 * Palm legacy theme (RGOeX-25775)
 
+Changed:
+========
+* Actualized changes with the upstream edx-platform template (RGOeX-25962)
+
 [olive-rg.1] 2023-03-23 (Olive RG release)
 ******************************************
 
