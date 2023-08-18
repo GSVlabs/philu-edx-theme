@@ -1,5 +1,5 @@
 // brand color
-$base-color: #74901f;
+$base-color: #1b511a;
 $base-color2: $base-color;
 
 // logo
@@ -9,7 +9,7 @@ $certificate-logo-height: $header-logo-height;
 $header-logo-offset-top: 0;
 
 // fonts
-$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  // base font family
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; // base font family
 $font-family-serif: $font-family-sans-serif;
 $georgia: $font-family-sans-serif;
 
@@ -35,11 +35,11 @@ $promo-description-font-mobile: null;
 $promo-description-color: #fff;
 
 // settings for footer
-$footer-bg: #2a374a;
+$footer-bg: #012010;
 $footer-nav-link-color: #fff;
 $footer-nav-link-color-hover: darken($footer-nav-link-color, 20%);
 $footer-support-text-and-logo: #fff;
-$footer-social-link-bg: #44b759;
+$footer-social-link-bg: #c9e5ab;
 $footer-social-link-bg-hover: lighten($footer-social-link-bg, 20%);
 
 // certificate
