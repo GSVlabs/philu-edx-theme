@@ -230,8 +230,10 @@
         <td>
           &copy; {% now "Y" %} {{ platform_name }}, {% trans "All rights reserved" as tmsg %}{{ tmsg | force_escape }}.<br/>
           <br/>
-          {% trans "Our mailing address is:" as tmsg %}{{ tmsg | force_escape }}<br/>
-          <a style="color: #74901f;" href="mailto:{{ contact_mailing_address }}">{{ contact_mailing_address }}</a>
+          {% if contact_mailing_address %}
+            {% trans "Our mailing address is:" as tmsg %}{{ tmsg | force_escape }}<br/>
+            {{ contact_mailing_address }}
+          {% endif %}
         </td>
       </tr>
       {% if unsubscribe_url %}
