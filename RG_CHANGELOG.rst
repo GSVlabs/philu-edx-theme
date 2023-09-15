@@ -9,6 +9,10 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 [Unreleased]
 ************
 
+Fixes:
+======
+* Fixed certificate print version (RGOeX-25903)
+
 Added:
 ======
 * Palm basic branding - logos, base color, etc. (RGOeX-26029)
