@@ -3,8 +3,13 @@
 
 div#root.SFE {
     button.status-link,
-    a.status-link {
+    a.status-link,
+    .modal-body a {
         color: $base-color;
+
+        &:hover {
+            color: $base-color-hover;
+        }
     }
 
     button.btn-outline-primary {

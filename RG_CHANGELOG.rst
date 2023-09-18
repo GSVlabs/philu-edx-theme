@@ -11,6 +11,7 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 
 Added:
 ======
+* Added based color to link in delete modal on file and upload page in studio legacy (RGOeX-25905)
 * Palm basic branding - logos, base color, etc. (RGOeX-26029)
 * Added a CSS variable for the base color hover, which is needed for use in the feedback form (RGA-793)
 * Palm legacy theme (RGOeX-25775)
