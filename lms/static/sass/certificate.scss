@@ -2,7 +2,7 @@
 
 @media print {
     @page {
-        size: auto;
+        size: landscape a4;
         margin: 0;
         border: 0;
     }
@@ -56,19 +56,27 @@
 .certificate-scroll-container {
     max-width: 100%;
     overflow: auto;
+    height: 20.9cm;
 }
 
 .certificate-wrapper {
     position: relative;
     width: 29.7cm;
-    height: 21cm;
+    height: 20.9cm;
     margin: 0 auto;
+    overflow: hidden;
+
+    @include only-for-Safari {
+        @media print {
+            zoom: 84%;
+        }
+    }
 }
 
 .main-bg {
     display: block;
     width: 29.7cm;
-    height: 21cm;
+    height: 20.9cm;
 }
 
 .certificate-body {
@@ -76,7 +84,7 @@
     left: 0;
     top: 0;
     width: 29.7cm;
-    height: 21cm;
+    height: 20.9cm;
     text-align: center;
     display: flex;
     align-items: center;

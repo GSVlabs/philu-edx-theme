@@ -9,6 +9,10 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 [Unreleased]
 ************
 
+Fixes:
+======
+* Fixed certificate print version (RGOeX-25903)
+
 Added:
 ======
 * Added based color to link in delete modal on file and upload page in studio legacy (RGOeX-25905)
