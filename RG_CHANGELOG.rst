@@ -11,6 +11,7 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 
 Fixes:
 ======
+* Fixed modal overlay height (RGOeX-25984)
 * Fixed certificate print version (RGOeX-25903)
 
 Added:

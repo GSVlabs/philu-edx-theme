@@ -437,9 +437,17 @@
     }
 }
 
-// ui date and time pickers
+// ui date, time pickers and overlay
 
 body {
+    .ui-widget-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     .ui-timepicker-list li {
         &:hover,
         &.ui-timepicker-selected {
