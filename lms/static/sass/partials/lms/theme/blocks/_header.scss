@@ -41,7 +41,7 @@ header.global-header {
                 height: $header-logo-height;
 
                 @include media-breakpoint-down(md) {
-                    margin-left: 0;
+                    margin: 0;
                 }
             }
         }
