@@ -3,8 +3,13 @@
         text-shadow: none;
     }
 
-    .teams-header .breadcrumbs .nav-item:not(:hover, :focus) {
-        color: $base-color;
+    .teams-header .breadcrumbs .nav-item {
+        color: $base-color !important;
+
+        &:hover,
+        &:focus {
+            color: $link-hover !important;
+        }
     }
 
     .forum-nav-thread .forum-nav-thread-link:hover {
