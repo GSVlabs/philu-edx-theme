@@ -16,6 +16,7 @@ Fixes:
 
 Added:
 ======
+* Visual enhancements for the Feedback xblock in studio (RGOeX-25464)
 * Added based color to link in delete modal on file and upload page in studio legacy (RGOeX-25905)
 * Palm basic branding - logos, base color, etc. (RGOeX-26029)
 * Added a CSS variable for the base color hover, which is needed for use in the feedback form (RGA-793)

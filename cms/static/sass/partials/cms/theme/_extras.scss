@@ -498,3 +498,31 @@ body {
 .wrapper-mast {
     z-index: 1;
 }
+
+// FeedbackXBlock
+
+.modal-type-feedback .wrapper-comp-settings .list-input.settings-list {
+    select {
+        background-color: #f2f2f2;
+        background-image: linear-gradient(#f2f2f2, #fff);
+
+        &:focus,
+        &:active {
+            background: $base-color;
+            color: $white;
+        }
+    }
+
+    select,
+    input {
+        margin-left: 10px;
+        width: 70%;
+    }
+
+    .setting-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 600px;
+    }
+}
