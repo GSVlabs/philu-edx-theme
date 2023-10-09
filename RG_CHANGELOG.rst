@@ -19,6 +19,10 @@ Fixes:
 
 Added:
 ======
+* Changes in the Legacy theme after reviewing (RGOeX-26068)
+    * Changed brand color
+    * Added new Plam logo and favicon
+    * Made django admin template consistent with it related template in platform
 * Visual enhancements for the Feedback xblock in studio (RGOeX-25464)
 * Added based color to link in delete modal on file and upload page in studio legacy (RGOeX-25905)
 * Palm basic branding - logos, base color, etc. (RGOeX-26029)
