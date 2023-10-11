@@ -24,6 +24,8 @@ Added:
     * Added new Plam logo and favicon
     * Made django admin template consistent with it related template in platform
 * Visual enhancements for the Feedback xblock in studio (RGOeX-25464)
+* Simplify email template branding (RGOeX-26099)
+    * This fix should be removed from theme when this `master PR <https://github.com/openedx/edx-platform/pull/33421>`_ will be merged
 * Added based color to link in delete modal on file and upload page in studio legacy (RGOeX-25905)
 * Palm basic branding - logos, base color, etc. (RGOeX-26029)
 * Added a CSS variable for the base color hover, which is needed for use in the feedback form (RGA-793)
