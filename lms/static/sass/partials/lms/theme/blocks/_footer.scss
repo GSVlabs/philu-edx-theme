@@ -119,9 +119,20 @@ footer.wrapper-footer {
         }
 
         .rg-link {
-            margin-left: 7px;
+            display: inline-flex;
+            align-items: center;
+            color: inherit;
+
+            &:active,
+            &:hover,
+            &:focus {
+                color: $footer-support-text-and-logo;
+                opacity: .8;
+                text-decoration: none;
+            }
 
             svg {
+                margin-left: 7px;
                 width: 23px;
                 height: 23px;
                 position: relative;
@@ -129,10 +140,6 @@ footer.wrapper-footer {
 
                 &.svg-raccoon-white {
                     fill: $footer-support-text-and-logo;
-                }
-
-                &:hover {
-                    opacity: .8;
                 }
             }
         }
