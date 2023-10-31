@@ -11,6 +11,7 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 
 Fixes:
 ======
+* Make importing images easier with SVG sprites and remove unused full-screen mode in old interface (RGOeX-26107)
 * Centered logo in the legacy header in rtl versions (RGOeX-25899)
 * Fixed breadcrumbs color hover on the Teams tab (RGOeX-25793)
 * Fixed course card image position on rtl and responsive mode (RGOeX-25898)
