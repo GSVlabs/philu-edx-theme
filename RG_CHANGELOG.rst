@@ -20,6 +20,7 @@ Fixes:
 
 Added:
 ======
+* Footer logo enhancements, added `by Raccoon Gang` text to a clickable area in the link with RG logo (RGOeX-26186)
 * Changes in the Legacy theme after reviewing (RGOeX-26068)
     * Changed brand color
     * Added new Plam logo and favicon
