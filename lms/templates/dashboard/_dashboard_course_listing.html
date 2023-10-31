@@ -57,6 +57,7 @@ from lms.djangoapps.experiments.utils import UPSELL_TRACKING_FLAG
 %>
 
 <%namespace name='static' file='../static_content.html'/>
+<%namespace name='theme_config' file='../theme_config.html'/>
 
 <li class="course-item">
   % if display_course_modes_on_dashboard:
@@ -249,7 +250,9 @@ from lms.djangoapps.experiments.utils import UPSELL_TRACKING_FLAG
                               data-course-id="${course_overview.id}"
                               onclick="var popupWindow = window.open('${twitter_url}', '${share_window_name}', '${share_window_config}'); popupWindow.opener = null; return false;">
                               <span class="sr">${share_msg}</span>
-                              <span class="fa fa-twitter" aria-hidden="true"></span>
+                              <svg>
+                                <use xlink:href="/static/${theme_config.html_data()['site_variable']}/images/svg-sprite.svg#ico-twitter-x" />
+                              </svg>
                             </a>
                         % endif
                     % endif
