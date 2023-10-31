@@ -30,6 +30,20 @@
 
 .wrapper-banner-user {
     margin-top: 0;
+
+    .banner-user .wrapper-copy-and-actions .message-actions .action {
+        .fa {
+            vertical-align: top;
+        }
+
+        svg {
+            display: inline-block;
+            vertical-align: top;
+            width: 16px;
+            height: 16px;
+            margin-top: 1px;
+        }
+    }
 }
 
 .layout-accomplishment {

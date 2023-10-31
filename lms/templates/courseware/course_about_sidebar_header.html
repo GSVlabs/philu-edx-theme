@@ -1,5 +1,6 @@
 <%page expression_filter="h"/>
 <%namespace name='static' file='../static_content.html'/>
+<%namespace name='theme_config' file='../theme_config.html'/>
 <%!
 from urllib.parse import quote
 
@@ -63,7 +64,10 @@ from six import text_type
         )
       %>
       <a href="${tweet_action}" class="share" target="_blank">
-        <span class="icon fa fa-twitter" aria-hidden="true"></span><span class="sr">${_("Tweet that you've enrolled in this course")}</span>
+        <svg>
+          <use xlink:href="/static/${theme_config.html_data()['site_variable']}/images/svg-sprite.svg#ico-twitter-x" />
+        </svg>
+        <span class="sr">${_("Tweet that you've enrolled in this course")}</span>
       </a>
       <a href="${facebook_action}" class="share" target="_blank">
         <span class="icon fa fa-thumbs-up" aria-hidden="true"></span><span class="sr">${_("Post a Facebook message to say you've enrolled in this course")}</span>

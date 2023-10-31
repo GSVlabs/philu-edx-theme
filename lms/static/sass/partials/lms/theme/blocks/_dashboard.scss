@@ -162,6 +162,26 @@
                                 }
                             }
                         }
+
+                        .action.action-twitter {
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &:hover,
+                            &:focus {
+                                svg {
+                                    fill: $white;
+                                }
+                            }
+
+                            svg {
+                                width: 16px;
+                                height: 16px;
+                                fill: #767676;
+                            }
+                        }
                     }
 
                     .wrapper-course-details-info {

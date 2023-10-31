@@ -176,6 +176,23 @@
                 margin-top: 0;
             }
         }
+
+        .social-sharing {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .share {
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+        }
     }
 }
 
