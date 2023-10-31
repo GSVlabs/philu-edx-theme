@@ -4,6 +4,7 @@
 
 <%namespace name='static' file='../static_content.html'/>
 <%namespace file='../main.html' import="login_query"/>
+<%namespace name='theme_config' file='../theme_config.html'/>
 
 <%!
 from django.conf import settings
@@ -69,7 +70,7 @@ from openedx.core.djangoapps.user_authn.toggles import should_redirect_to_authn_
               % endfor
             </select>
             <svg class="select-arrow-icon">
-              <use xlink:href="#ico-arrow-down" />
+              <use xlink:href="/static/${theme_config.html_data()['site_variable']}/images/svg-sprite.svg#ico-arrow-down" />
             </svg>
           </label>
         </form>
