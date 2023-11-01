@@ -9,6 +9,9 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 [Unreleased]
 ************
 
+[palm-rg.1] 2023-11-03 (Palm RG release)
+****************************************
+
 Fixes:
 ======
 * Fixed theme color for the shared video tab enroll button (RGOeX-26207)
