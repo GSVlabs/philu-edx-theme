@@ -9,6 +9,10 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 [Unreleased]
 ************
 
+Fixes:
+======
+* Update CMS admin page structure from edx-platform: page title, heading and nav links (RGOeX-26101)
+
 [palm-rg.1] 2023-11-03 (Palm RG release)
 ****************************************
 
