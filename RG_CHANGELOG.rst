@@ -11,6 +11,7 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 
 Fixes:
 ======
+* Fixed theme color for the shared video tab enroll button (RGOeX-26207)
 * Centered logo in the legacy header in rtl versions (RGOeX-25899)
 * Fixed breadcrumbs color hover on the Teams tab (RGOeX-25793)
 * Fixed course card image position on rtl and responsive mode (RGOeX-25898)
