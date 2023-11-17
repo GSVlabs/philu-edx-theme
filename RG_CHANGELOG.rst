@@ -12,13 +12,14 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 Fixes:
 ======
 * Update CMS admin page structure from edx-platform: page title, heading and nav links (RGOeX-26101)
+* Fixed theme color and responsive styles for the shared video tab enroll button (RGOeX-26207)
+    * Re-check this fix and remove it if necessary, after palm updated with this master MR `master PR <https://github.com/openedx/edx-platform/pull/32078>`_
 
 [palm-rg.1] 2023-11-03 (Palm RG release)
 ****************************************
 
 Fixes:
 ======
-* Fixed theme color for the shared video tab enroll button (RGOeX-26207)
 * Centered logo in the legacy header in rtl versions (RGOeX-25899)
 * Fixed breadcrumbs color hover on the Teams tab (RGOeX-25793)
 * Fixed course card image position on rtl and responsive mode (RGOeX-25898)

@@ -572,30 +572,38 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
     }
 }
 
-body.public-video-page .public-video-share-cta {
-    margin: 20px 0;
-
-    .nav-links {
-        float: none;
-        display: flex;
-        justify-content: flex-end;
-
-        @include media-breakpoint-down(xs) {
-            flex-direction: column;
-            align-items: flex-start;
+body.public-video-page {
+    .tc-wrapper {
+        @include media-breakpoint-down(sm) {
+            width: 100%;
         }
+    }
 
-        .btn-learn-more {
-            color: #313131;
-        }
+    .public-video-share-cta {
+        margin: 20px 0;
 
-        .btn-enroll {
-            margin-left: 12px;
-            background: $base-color;
-            border-color: $base-color;
+        .nav-links {
+            float: none;
+            display: flex;
+            justify-content: flex-end;
 
             @include media-breakpoint-down(xs) {
-                margin: 15px 0 0;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .btn-learn-more {
+                color: #313131;
+            }
+
+            .btn-enroll {
+                margin-left: 12px;
+                background: $base-color;
+                border-color: $base-color;
+
+                @include media-breakpoint-down(xs) {
+                    margin: 15px 0 0;
+                }
             }
         }
     }
