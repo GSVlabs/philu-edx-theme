@@ -1,7 +1,7 @@
 // TODO: Need to remove this file and change variable from Micro front end application
 // custom colors for the course page and files & uploads page
 
-div#root.SFE {
+div#root.SFE .SFE-wrapper {
     button.status-link,
     a.status-link,
     .modal-body a {
@@ -19,20 +19,29 @@ div#root.SFE {
         &:hover {
             background-color: $base-color;
             border-color: $base-color;
+            color: $white;
         }
 
         &:not(:disabled, .disabled).active,
         &:not(:disabled, .disabled):active {
             background-color: $base-color-hover;
             border-color: $base-color-hover;
+            box-shadow: 0 0 0 .2rem rgba($base-color, .5) !important;
         }
     }
 
-    .page-item.active button.page-link {
-        background-color: $base-color;
+    .page-item {
+        button.page-link {
+            color: $base-color;
+        }
+
+        &.active button.page-link {
+            background-color: $base-color;
+            color: $white;
+        }
     }
 
-    button.btn-primary,
+    button.btn.btn-primary,
     a.btn-primary {
         background-color: $base-color;
         border-color: $base-color;
@@ -42,6 +51,7 @@ div#root.SFE {
         &:hover {
             background-color: $base-color-hover;
             border-color: $base-color-hover;
+            box-shadow: 0 0 0 .2rem rgba($base-color, .5) !important;
         }
     }
 
