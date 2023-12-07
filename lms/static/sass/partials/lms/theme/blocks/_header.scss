@@ -43,6 +43,10 @@ header.global-header {
                 @include media-breakpoint-down(md) {
                     margin: 0;
                 }
+
+                @include media-breakpoint-down(xs) {
+                    height: $header-logo-height-mobile;
+                }
             }
         }
     }
@@ -211,6 +215,10 @@ header.global-header {
         transform: translateY(-50%);
         height: 25px;
         padding-bottom: 0;
+
+        @include media-breakpoint-down(xs) {
+            top: calc(#{$header-logo-height-mobile} / 2);
+        }
 
         .line {
             background: $hamburger-btn-color;

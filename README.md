@@ -9,6 +9,7 @@
 - [ ] header logo
 - [ ] promo banner text
 - [ ] promo banner background
+- [ ] header responsive
 
 **footer block**
 - [ ] footer logo

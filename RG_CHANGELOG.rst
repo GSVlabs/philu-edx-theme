@@ -17,6 +17,10 @@ Fixes:
 * Fixed theme color and responsive styles for the shared video tab enroll button (RGOeX-26207)
     * Re-check this fix and remove it if necessary, after palm updated with this master MR `master PR <https://github.com/openedx/edx-platform/pull/32078>`_
 
+Added:
+======
+* Added 'header-logo-height-mobile' variable for regulating the logo size on mobile devices and related item to the theme checklist (RGOeX-26270)
+
 [palm-rg.1] 2023-11-03 (Palm RG release)
 ****************************************
 
