@@ -573,23 +573,57 @@ body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button {
 }
 
 body.public-video-page {
+    background: none !important;
+
+    #content {
+        padding-bottom: 0;
+    }
+
+    #main {
+        padding: 0;
+    }
+
+    .xmodule_display.xmodule_VideoBlock .video {
+        padding: 25px;
+        margin: 0;
+    }
+
     .tc-wrapper {
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-        }
+        width: 100%;
     }
 
     .public-video-share-cta {
-        margin: 20px 0;
+        margin: 20px 0 40px;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .org-logo {
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 20px;
+            }
+        }
 
         .nav-links {
             float: none;
             display: flex;
             justify-content: flex-end;
+            width: 100%;
 
-            @include media-breakpoint-down(xs) {
+            @include media-breakpoint-down(sm) {
                 flex-direction: column;
                 align-items: flex-start;
+
+                .btn {
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-align: center;
+                    margin: 5px 0 !important;
+                }
             }
 
             .btn-learn-more {
@@ -606,5 +640,13 @@ body.public-video-page {
                 }
             }
         }
+    }
+
+    .xblock-public_view-video .hd-2 {
+        margin-bottom: 15px;
+    }
+
+    .video-wrapper iframe {
+        width: 100% !important;
     }
 }

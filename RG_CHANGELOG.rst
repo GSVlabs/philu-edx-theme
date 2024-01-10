@@ -14,7 +14,7 @@ Fixes:
 * Fixed unnecessary underlining of the RG-link in footer in analytics (RGOeX-26186)
 * Fixed links and buttons active state color in studio Files and Uploads (RGOeX-25905)
 * Update CMS admin page structure from edx-platform: page title, heading and nav links (RGOeX-26101)
-* Fixed theme color and responsive styles for the shared video tab enroll button (RGOeX-26207)
+* Fixed theme color, responsive styles and background for the shared video tab enroll button (RGOeX-26207)
     * Re-check this fix and remove it if necessary, after palm updated with this master MR `master PR <https://github.com/openedx/edx-platform/pull/32078>`_
 
 Added:
