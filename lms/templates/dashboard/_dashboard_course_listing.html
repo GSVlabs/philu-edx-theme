@@ -5,26 +5,16 @@ import datetime
 import six
 
 from django.conf import settings
-from django.utils.http import urlencode, urlquote_plus
+from django.utils.http import urlencode
 from django.utils.translation import gettext as _
-from django.utils.translation import ungettext
 from django.urls import reverse
-from common.djangoapps.course_modes.models import CourseMode
+from urllib.parse import quote_plus
 from common.djangoapps.course_modes.helpers import enrollment_mode_display
 from common.djangoapps.student.helpers import user_has_passing_grade_in_course
 from lms.djangoapps.verify_student.services import IDVerificationService
 from openedx.core.djangolib.js_utils import dump_js_escaped_json, js_escaped_string
 from openedx.core.djangolib.markup import HTML, Text
 from openedx.features.course_experience import course_home_url
-from common.djangoapps.student.helpers import (
-  VERIFY_STATUS_NEED_TO_VERIFY,
-  VERIFY_STATUS_SUBMITTED,
-  VERIFY_STATUS_RESUBMITTED,
-  VERIFY_STATUS_APPROVED,
-  VERIFY_STATUS_MISSED_DEADLINE,
-  VERIFY_STATUS_NEED_TO_REVERIFY,
-  DISABLE_UNENROLL_CERT_STATES,
-)
 from common.djangoapps.util.course import get_link_for_about_page, get_encoded_course_sharing_utm_params
 from lms.djangoapps.experiments.utils import UPSELL_TRACKING_FLAG
 %>
@@ -235,8 +225,8 @@ from lms.djangoapps.experiments.utils import UPSELL_TRACKING_FLAG
                             <%
                               twitter_share_url = u"{url}?{utm_params}".format(url=share_url, utm_params=encoded_utm_parameters['twitter'])
                               default_share_text = _("I'm taking {course_name} online with {twitter_brand}. Check it out!").format(course_name=course_overview.display_name_with_default, twitter_brand=share_settings.get('TWITTER_BRAND', '@edxonline'))
-                              share_text = urlquote_plus(share_settings.get('DASHBOARD_TWITTER_TEXT', default_share_text))
-                              twitter_url = u'https://twitter.com/intent/tweet?text=' + share_text + u'%20' + urlquote_plus(twitter_share_url)
+                              share_text = quote_plus(share_settings.get('DASHBOARD_TWITTER_TEXT', default_share_text))
+                              twitter_url = u'https://twitter.com/intent/tweet?text=' + share_text + u'%20' + quote_plus(twitter_share_url)
                               share_msg = _("Share {course_name} on Twitter").format(course_name=course_overview.display_name_with_default)
                             %>
                             <a
