@@ -4,10 +4,15 @@ RG Changelog
 All notable changes to this project will be documented in this file.
 
 The format is based on `Keep a Changelog <https://keepachangelog.com/en/1.0.0/>`_,
-and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
+and this project adheres to customized Semantic Versioning e.g.: `quince-rg.1`
 
 [Unreleased]
 ************
+
+Added:
+======
+* Quince legacy theme (RGOeX-26355)
+* Removed unused scss files and html templates (RGOeX-26355)
 
 Fixes:
 ======
