@@ -69,7 +69,7 @@ data = {
     ),
     "description": Text(_("It works! Powered by Open edX{registered_trademark}")).format(registered_trademark=HTML("<sup style='font-size: 65%'>&reg;</sup>"))
   },
-  "site_variable": settings.FEATURES.get('BASE_NUTMEG_SITE_THEME', settings.DEFAULT_SITE_THEME),
+  "site_variable": settings.FEATURES.get('BASE_SITE_THEME', settings.DEFAULT_SITE_THEME),
   "header_logo": "logo.svg",
   "footer_logo": "logo-footer.svg",
   "certificate_logo": "logo-certificate.svg",
