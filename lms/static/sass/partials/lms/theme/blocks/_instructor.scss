@@ -76,6 +76,14 @@
             white-space: normal;
         }
 
+        input[type="button"] {
+            @include simple(#eee);
+
+            font-size: em(13);
+            line-height: 1.3em;
+            padding: 8px 17px;
+        }
+
         button.btn-blue,
         input.btn-blue:not([type="button"]) {
             @include simple($base-color);
