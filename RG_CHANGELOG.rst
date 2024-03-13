@@ -16,6 +16,7 @@ Added:
 
 Fixes:
 ======
+* Fixed instructor buttons color (RGOeX-26464)
 * Fixed unnecessary underlining of the RG-link in footer in analytics (RGOeX-26186)
 * Fixed links and buttons active state color in studio Files and Uploads (RGOeX-25905)
 * Update CMS admin page structure from edx-platform: page title, heading and nav links (RGOeX-26101)
