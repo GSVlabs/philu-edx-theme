@@ -435,6 +435,16 @@
             color: $base-color;
         }
     }
+
+    #oa_schedule_editor_wrapper {
+        .openassessment_date_config_radio_container .date_config_doc_link {
+            color: $base-color;
+        }
+
+        #dates_config_new_badge {
+            background: $base-color;
+        }
+    }
 }
 
 // ui date, time pickers and overlay

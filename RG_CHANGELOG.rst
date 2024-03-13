@@ -14,6 +14,7 @@ and this project adheres to customized Semantic Versioning e.g.: `quince-rg.1`
 
 Added:
 ======
+* Added base color for the Learn More link and «New» label in ORA CMS schedule settings (RGOeX-26469)
 * Quince legacy theme (RGOeX-26355)
 * Removed unused scss files and html templates (RGOeX-26355)
 
