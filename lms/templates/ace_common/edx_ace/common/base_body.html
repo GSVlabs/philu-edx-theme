@@ -29,7 +29,7 @@
 
 {% google_analytics_tracking_pixel %}
 
-{% with brand_color="#c16800" logo_max_height="65px" %}
+{% with brand_color="#61b4e4" logo_max_height="35px" %}
 <div bgcolor="#f5f5f5" lang="{{ LANGUAGE_CODE|default:"en" }}" dir="{{ LANGUAGE_BIDI|yesno:"rtl,ltr" }}" style="
   margin: 0;
   padding: 0;
@@ -79,7 +79,7 @@
                                   <tr>
                                     <td align="left" valign="top">
                                       <a href="{% with_link_tracking homepage_url %}">
-                                        <img src="{{logo_url}}logo-email.png" style="max-height: {{ logo_max_height }};" height="auto" alt="{% filter force_escape %}{% blocktrans %}Go to {{ platform_name }} Home Page{% endblocktrans %}{% endfilter %}"/></a>
+                                        <img src="{{logo_url}}logo-email.png" style="margin: 15px 0 15px 0;max-height: {{ logo_max_height }};" height="auto" alt="{% filter force_escape %}{% blocktrans %}Go to {{ platform_name }} Home Page{% endblocktrans %}{% endfilter %}"/></a>
                                     </td>
                                   </tr>
                                 </table>
