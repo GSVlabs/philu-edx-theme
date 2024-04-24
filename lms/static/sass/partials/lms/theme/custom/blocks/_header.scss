@@ -1,0 +1,21 @@
+header.global-header {
+    .nav-links .secondary .nav-item {
+        a.register-btn {
+            background: none;
+        }
+
+        a.help-link,
+        a.menu-title,
+        .toggle-user-dropdown {
+            color: $white;
+        }
+    }
+
+    .course-header {
+        color: $white;
+    }
+}
+
+.home > header .title > .heading-group h1 {
+    text-transform: uppercase;
+}

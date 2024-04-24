@@ -1,0 +1,23 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+
+@font-face {
+    font-family: "Trio Grotesk";
+    src: local("Trio Grotesk"),
+        local("TrioGrotesk"),
+        url("#{$static-path}/fonts/TrioGrotesk.woff2") format("woff2"),
+        url("#{$static-path}/fonts/TrioGrotesk.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Trio Grotesk";
+    src: local("Trio Grotesk Bold"),
+        local("TrioGrotesk-Bold"),
+        url("#{$static-path}/fonts/TrioGrotesk-Bold.woff2") format("woff2"),
+        url("#{$static-path}/fonts/TrioGrotesk-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

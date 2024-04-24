@@ -8,66 +8,52 @@ from openedx.core.djangolib.markup import HTML, Text
 <%def name="html_data()"><%
 data = {
   "footerIcons": {
+    "linkedin": {
+      "href": "https://www.linkedin.com/company/philanthropyuniversity/",
+      "src": "ico-linkedin"
+    },
     "facebook": {
-      "href": "#",
+      "href": "https://www.facebook.com/philanthropyuniversity",
       "src": "ico-facebook"
     },
     "twitter": {
-      "href": "#",
+      "href": "https://twitter.com/philanthropyuni?lang=en",
       "src": "ico-twitter-x-circle"
     },
-    "linkedin": {
-      "href": "#",
-      "src": "ico-linkedin"
-    },
     "youtube": {
-      "href": "#",
+      "href": "https://www.youtube.com/channel/UCQ6qeELvsDgIt4VO2bP0TBw",
       "src": "ico-youtube"
-    },
-    "telegram": {
-      "href": "#",
-      "src": "ico-telegram"
-    },
-    "instagram": {
-      "href": "#",
-      "src": "ico-instagram"
-    },
-    "mail": {
-      "href": "#",
-      "src": "ico-envelope"
     }
 },
   "footerLinks": {
     "about": {
       "order": 1,
-      "url": "/about",
+      "url": "https://www.philanthropyu.org/about-us",
       "text": Text(_('About')),
-      "target_blank": False
+      "target_blank": True
+    },
+    "terms": {
+      "order": 2,
+      "url": "https://www.philanthropyu.org/terms-of-use",
+      "text": Text(_('Terms of Use')),
+      "target_blank": True
     },
     "privacy": {
-      "order": 2,
-      "url": "/privacy",
+      "order": 3,
+      "url": "https://www.philanthropyu.org/privacy-policy",
       "text": Text(_('Privacy Policy')),
       "target_blank": False
     },
-    "terms": {
+    "faq": {
       "order": 3,
-      "url": "/tos",
-      "text": Text(_('Terms of Service')),
-      "target_blank": False
-    },
-    "contact_us": {
-      "order": 4,
-      "url": "/support/contact_us",
-      "text": Text(_('Contact Us')),
+      "url": "https://edx.readthedocs.io/projects/open-edx-learner-guide/en/open-release-quince.master/index.html",
+      "text": Text(_('FAQ')),
       "target_blank": False
     }
   },
   "banner": {
-    "title": Text(_("Welcome to {platform_name}")).format(
-        platform_name=helpers.get_value('PLATFORM_NAME', settings.PLATFORM_NAME)
-    ),
-    "description": Text(_("It works! Powered by Open edX{registered_trademark}")).format(registered_trademark=HTML("<sup style='font-size: 65%'>&reg;</sup>"))
+    "title": Text(_("Welcome to Philanthropy University")),
+    "description": Text(_("Free Courses For Social Impact Leaders"))
   },
   "site_variable": settings.FEATURES.get('BASE_SITE_THEME', settings.DEFAULT_SITE_THEME),
   "header_logo": "logo.svg",
