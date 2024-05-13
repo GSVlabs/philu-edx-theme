@@ -60,7 +60,7 @@ show_program_listing = ProgramsApiConfig.is_enabled()
             <a href="${reverse('learner_profile', kwargs={'username': username})}" role="menuitem">${_("My profile")}</a>
         </div>
         <div class="mobile-nav-item dropdown-item dropdown-nav-item">
-            <a href="https://edx.readthedocs.io/projects/open-edx-learner-guide/en/open-release-quince.master/SFD_dashboard_profile_SectionHead.html" rel="menuitem" target="_blank">${_("Help Center")}</a>
+            <a href="${getattr(settings, 'SUPPORT_URL_DROPDOWN', None)}" rel="menuitem" target="_blank">${_("Help Center")}</a>
         </div>
         % if should_show_order_history:
             <div class="mobile-nav-item dropdown-item dropdown-nav-item">
