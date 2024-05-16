@@ -1,18 +1,138 @@
 header.global-header {
-    .nav-links .secondary .nav-item {
-        a.register-btn {
-            background: none;
+    .nav-links {
+        justify-content: flex-end;
+
+        .main .nav-item a {
+            margin: 0;
+            color: $white;
         }
 
-        a.help-link,
-        a.menu-title,
-        .toggle-user-dropdown {
-            color: $white;
+        .secondary {
+            & > div > .nav-item + .nav-item {
+                margin-left: 10px;
+            }
+
+            .nav-item {
+                margin-left: 0;
+
+                a.register-btn {
+                    background: none;
+                }
+
+                .menu-title {
+                    padding: 0;
+                    background: none;
+                    box-shadow: none;
+                    letter-spacing: normal;
+                    text-shadow: none;
+                    border: none;
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 600;
+
+                    &:hover {
+                        .username,
+                        .fa {
+                            color: $base-color;
+                        }
+                    }
+
+                    .username {
+                        font-weight: 600;
+                        margin: 0 9px;
+                        display: block;
+                    }
+                }
+            }
+
+            .user-image-frame {
+                margin: 0;
+            }
+
+            .dropdown-user-menu {
+                right: 10px;
+                border: none;
+                box-shadow: $dropdown-shadow;
+
+                .dropdown-section-name {
+                    color: $dropdown-section-name-color;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    padding: 15px 24px 5px;
+                    display: block;
+                    font-size: 14px;
+                }
+
+                .dropdown-item {
+                    border: none !important;
+                    cursor: default;
+
+                    &:hover {
+                        background: none;
+                    }
+
+                    a {
+                        padding: 11px 24px;
+                        text-transform: none;
+                        color: $dropdown-item-color;
+
+                        &:hover {
+                            background: $dropdown-item-bg-color-hover;
+                            color: $dropdown-item-color-hover;
+                        }
+                    }
+                }
+
+                .with-border {
+                    border-top: $dropdown-item-border !important;
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        border: none;
+        padding: 10px;
+        background: $mobile-menu-bg;
+
+        .mobile-nav-item {
+            padding: 0 10px;
+
+            &.with-border {
+                border-top: 1px solid rgba($dropdown-item-color, .3);
+            }
+        }
+
+        .mobile-nav-link {
+            padding: 0;
+            background: $mobile-menu-bg;
+
+            .dropdown-section-name {
+                display: block;
+                text-transform: uppercase;
+                padding: 13px 5px 0;
+                font-weight: 600;
+                font-size: 14px;
+                color: $dropdown-section-name-color;
+            }
+
+            a {
+                color: $dropdown-item-color !important;
+                background: none;
+                padding: 6px 5px;
+                font-size: 14px;
+                font-weight: 500;
+                border: none;
+            }
         }
     }
 
     .course-header {
         color: $white;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 20px;
+        }
     }
 }
 

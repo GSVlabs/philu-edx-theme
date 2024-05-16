@@ -22,7 +22,16 @@ $header-nav-link-color-hover: darken($header-nav-link-color, 20%);
 $header-vertical-padding: 38px;
 $header-login-bg: #fff;
 $header-register-bg: $base-color;
-$hamburger-btn-color: $base-color;
+$hamburger-btn-color: #fff;
+$dropdown-section-name-color: #003a56;
+$dropdown-item-color: #849aa5;
+$dropdown-item-color-hover: #4a4a4a;
+$dropdown-item-bg-color-hover: #f4f5f8;
+$dropdown-item-border: 1px solid #e4e5ec;
+$dropdown-shadow: 0 0 10px 0 rgba(69, 73, 91, .22);
+
+// mobile menu
+$mobile-menu-bg: #fff;
 
 // promo banner
 $promo-title-margin: 0;
