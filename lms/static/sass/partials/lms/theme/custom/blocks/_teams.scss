@@ -1,0 +1,19 @@
+.view-teams.view-in-course {
+    .action-primary,
+    .action-cancel,
+    .action-edit-team,
+    .action-remove-member {
+        border-color: $base-color;
+        color: $base-color;
+    }
+
+    .action-primary,
+    .card .card-actions .action-view {
+        color: $white;
+        background: $base-color;
+
+        &:hover {
+            background: $base-color;
+        }
+    }
+}
