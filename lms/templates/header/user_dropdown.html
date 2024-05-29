@@ -43,21 +43,21 @@ show_program_listing = ProgramsApiConfig.is_enabled()
             <span class="dropdown-section-name">${_("Dashboard")}</span>
         </div>
         <div class="mobile-nav-item dropdown-item dropdown-nav-item">
-            <a href="${reverse('dashboard')}" role="menuitem">${_("My courses")}</a>
+            <a href="${reverse('dashboard')}" role="menuitem">${_("My Courses")}</a>
         </div>
         % if show_program_listing:
             <div class="mobile-nav-item dropdown-item dropdown-nav-item">
-                <a href="${reverse('program_listing_view')}" role="menuitem">${_("My programs")}</a>
+                <a href="${reverse('program_listing_view')}" role="menuitem">${_("My Programs")}</a>
             </div>
         % endif
         <div class="mobile-nav-item dropdown-item dropdown-nav-item with-border">
-            <span class="dropdown-section-name">${_("Manage information")}</span>
+            <span class="dropdown-section-name">${_("Manage Information")}</span>
         </div>
         <div class="mobile-nav-item dropdown-item dropdown-nav-item">
-            <a href="${reverse('account_settings')}" role="menuitem">${_("My account")}</a>
+            <a href="${reverse('account_settings')}" role="menuitem">${_("My Account")}</a>
         </div>
         <div class="mobile-nav-item dropdown-item dropdown-nav-item">
-            <a href="${reverse('learner_profile', kwargs={'username': username})}" role="menuitem">${_("My profile")}</a>
+            <a href="${reverse('learner_profile', kwargs={'username': username})}" role="menuitem">${_("My Profile")}</a>
         </div>
         <div class="mobile-nav-item dropdown-item dropdown-nav-item">
             <a href="${getattr(settings, 'SUPPORT_URL_DROPDOWN', None)}" rel="menuitem" target="_blank">${_("Help Center")}</a>
