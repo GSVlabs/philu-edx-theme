@@ -1,0 +1,32 @@
+// Audio xblock
+
+.audio_block {
+    @media screen and (max-width: 717px) {
+        display: block !important;
+
+        & > div {
+            width: 100% !important;
+        }
+    }
+
+    .audio-transcript pre {
+        margin: 0 0 0 15px;
+        height: 347px;
+
+        @media screen and (max-width: 717px) {
+            margin: 15px 0 0;
+        }
+    }
+
+    .volume-holder {
+        display: block !important;
+    }
+
+    #downloads-heading {
+        margin-bottom: 5px;
+    }
+
+    #downloads-div {
+        margin-bottom: 10px;
+    }
+}
