@@ -1,0 +1,15 @@
+.view-dashboard .modal .inner-wrapper form .submit input[type="submit"],
+.wrapper-messages-primary .message.message-status.course-status-certavailable .actions-primary .action-certificate .btn {
+    background: $base-color;
+    border: 1px solid $base-color;
+    text-shadow: none;
+    letter-spacing: normal;
+    box-shadow: none;
+    color: $white;
+    transition: all .1s linear 0s;
+
+    &:hover {
+        background: none !important;
+        color: $base-color;
+    }
+}
