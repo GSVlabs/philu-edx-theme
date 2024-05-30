@@ -13,3 +13,11 @@
         color: $base-color;
     }
 }
+
+.view-dashboard .actions-dropdown .actions-dropdown-list .actions-item .action {
+    white-space: nowrap;
+
+    &:hover {
+        color: $link-color !important;
+    }
+}
