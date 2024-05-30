@@ -147,6 +147,12 @@ body {
         }
     }
 
+    &.view-in-course .course-wrapper main {
+        @include media-breakpoint-down(xs) {
+            padding: 20px 0;
+        }
+    }
+
     &.small,
     &.inline-link {
         background: transparent;
