@@ -1,4 +1,7 @@
+$static-path: "../";
+
 @import "partials/lms/theme/variables";
+@import "partials/lms/theme/custom/blocks/fonts";
 
 @media print {
     @page {
@@ -26,6 +29,11 @@
         text-decoration: none;
         border: none;
     }
+}
+
+body,
+button {
+    font-family: $font-family-sans-serif !important;
 }
 
 .wrapper-banner-user {
