@@ -25,6 +25,10 @@ course_mode_class = course_mode if course_mode else ''
         <meta property="og:image" content="${full_course_image_url}" />
         <meta property="og:description" content="${facebook_share_text}" />
     %endif
+    % if twitter_share_enabled:
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:description" content="${twitter_share_text}" />
+    %endif
     <title>${document_title}</title>
 
     <%static:css group='style-certificates'/>
