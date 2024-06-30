@@ -30,3 +30,11 @@
         margin-bottom: 10px;
     }
 }
+
+// Video xblock
+
+.xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-controls .control.play {
+    width: auto;
+    height: auto;
+    float: none;
+}
