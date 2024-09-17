@@ -1,3 +1,5 @@
+This repo is part of the philu set of repos, that create the philanthropyu.org website
+
 ## Checklist for a LMS basic theme:
 
 **general**
